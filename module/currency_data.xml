@@ -1,0 +1,1936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.floatrates.com/currency-rates.xsl" ?>
+<channel>
+	<title>XML Daily Foreign Exchange Rates for U.S. Dollar (USD)</title>
+	<link>http://www.floatrates.com/currency/usd/</link>
+	<xmlLink>http://www.floatrates.com/daily/usd.xml</xmlLink>
+	<description>XML Daily foreign exchange rates for U.S. Dollar (USD) from the Float Rates. Published at Wed, 6 Jul 2022 23:55:01 GMT.</description>
+	<language>en</language>
+	<baseCurrency>USD</baseCurrency>
+	<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+	<lastBuildDate>Wed, 6 Jul 2022 23:55:01 GMT</lastBuildDate>
+	<item>
+		<title>1 USD = 0.98124618 EUR</title>
+		<link>http://www.floatrates.com/usd/eur/</link>
+		<description>1 U.S. Dollar = 0.98124618 Euro</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>EUR</targetCurrency>
+		<targetName>Euro</targetName>
+		<exchangeRate>0.98124618</exchangeRate>
+		<inverseRate>1.01911225</inverseRate>
+		<inverseDescription>1 Euro = 1.01911225 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 0.83943861 GBP</title>
+		<link>http://www.floatrates.com/usd/gbp/</link>
+		<description>1 U.S. Dollar = 0.83943861 U.K. Pound Sterling</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GBP</targetCurrency>
+		<targetName>U.K. Pound Sterling</targetName>
+		<exchangeRate>0.83943861</exchangeRate>
+		<inverseRate>1.19127234</inverseRate>
+		<inverseDescription>1 U.K. Pound Sterling = 1.19127234 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.47256712 AUD</title>
+		<link>http://www.floatrates.com/usd/aud/</link>
+		<description>1 U.S. Dollar = 1.47256712 Australian Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>AUD</targetCurrency>
+		<targetName>Australian Dollar</targetName>
+		<exchangeRate>1.47256712</exchangeRate>
+		<inverseRate>0.67908619</inverseRate>
+		<inverseDescription>1 Australian Dollar = 0.67908619 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 0.97113150 CHF</title>
+		<link>http://www.floatrates.com/usd/chf/</link>
+		<description>1 U.S. Dollar = 0.97113150 Swiss Franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CHF</targetCurrency>
+		<targetName>Swiss Franc</targetName>
+		<exchangeRate>0.97113150</exchangeRate>
+		<inverseRate>1.02972667</inverseRate>
+		<inverseDescription>1 Swiss Franc = 1.02972667 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.30458766 CAD</title>
+		<link>http://www.floatrates.com/usd/cad/</link>
+		<description>1 U.S. Dollar = 1.30458766 Canadian Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CAD</targetCurrency>
+		<targetName>Canadian Dollar</targetName>
+		<exchangeRate>1.30458766</exchangeRate>
+		<inverseRate>0.76652572</inverseRate>
+		<inverseDescription>1 Canadian Dollar = 0.76652572 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 135.50458692 JPY</title>
+		<link>http://www.floatrates.com/usd/jpy/</link>
+		<description>1 U.S. Dollar = 135.50458692 Japanese Yen</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>JPY</targetCurrency>
+		<targetName>Japanese Yen</targetName>
+		<exchangeRate>135.50458692</exchangeRate>
+		<inverseRate>0.00737982</inverseRate>
+		<inverseDescription>1 Japanese Yen = 0.00737982 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 7.84607157 HKD</title>
+		<link>http://www.floatrates.com/usd/hkd/</link>
+		<description>1 U.S. Dollar = 7.84607157 Hong Kong Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>HKD</targetCurrency>
+		<targetName>Hong Kong Dollar</targetName>
+		<exchangeRate>7.84607157</exchangeRate>
+		<inverseRate>0.12745232</inverseRate>
+		<inverseDescription>1 Hong Kong Dollar = 0.12745232 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 10.15565080 MAD</title>
+		<link>http://www.floatrates.com/usd/mad/</link>
+		<description>1 U.S. Dollar = 10.15565080 Moroccan Dirham</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MAD</targetCurrency>
+		<targetName>Moroccan Dirham</targetName>
+		<exchangeRate>10.15565080</exchangeRate>
+		<inverseRate>0.09846735</inverseRate>
+		<inverseDescription>1 Moroccan Dirham = 0.09846735 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 4.42067590 MYR</title>
+		<link>http://www.floatrates.com/usd/myr/</link>
+		<description>1 U.S. Dollar = 4.42067590 Malaysian Ringgit</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MYR</targetCurrency>
+		<targetName>Malaysian Ringgit</targetName>
+		<exchangeRate>4.42067590</exchangeRate>
+		<inverseRate>0.22620975</inverseRate>
+		<inverseDescription>1 Malaysian Ringgit = 0.22620975 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 466.01806852 KZT</title>
+		<link>http://www.floatrates.com/usd/kzt/</link>
+		<description>1 U.S. Dollar = 466.01806852 Kazakhstani Tenge</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>KZT</targetCurrency>
+		<targetName>Kazakhstani Tenge</targetName>
+		<exchangeRate>466.01806852</exchangeRate>
+		<inverseRate>0.00214584</inverseRate>
+		<inverseDescription>1 Kazakhstani Tenge = 0.00214584 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 115.59198081 HTG</title>
+		<link>http://www.floatrates.com/usd/htg/</link>
+		<description>1 U.S. Dollar = 115.59198081 Haitian gourde</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>HTG</targetCurrency>
+		<targetName>Haitian gourde</targetName>
+		<exchangeRate>115.59198081</exchangeRate>
+		<inverseRate>0.00865112</inverseRate>
+		<inverseDescription>1 Haitian gourde = 0.00865112 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.40397828 BND</title>
+		<link>http://www.floatrates.com/usd/bnd/</link>
+		<description>1 U.S. Dollar = 1.40397828 Brunei Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BND</targetCurrency>
+		<targetName>Brunei Dollar</targetName>
+		<exchangeRate>1.40397828</exchangeRate>
+		<inverseRate>0.71226173</inverseRate>
+		<inverseDescription>1 Brunei Dollar = 0.71226173 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 474.41200324 KMF</title>
+		<link>http://www.floatrates.com/usd/kmf/</link>
+		<description>1 U.S. Dollar = 474.41200324 	Comoro franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>KMF</targetCurrency>
+		<targetName>	Comoro franc</targetName>
+		<exchangeRate>474.41200324</exchangeRate>
+		<inverseRate>0.00210787</inverseRate>
+		<inverseDescription>1 	Comoro franc = 0.00210787 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 64.19204390 MZN</title>
+		<link>http://www.floatrates.com/usd/mzn/</link>
+		<description>1 U.S. Dollar = 64.19204390 Mozambican metical</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MZN</targetCurrency>
+		<targetName>Mozambican metical</targetName>
+		<exchangeRate>64.19204390</exchangeRate>
+		<inverseRate>0.01557825</inverseRate>
+		<inverseDescription>1 Mozambican metical = 0.01557825 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3,749.67948718 UGX</title>
+		<link>http://www.floatrates.com/usd/ugx/</link>
+		<description>1 U.S. Dollar = 3,749.67948718 Ugandan shilling</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>UGX</targetCurrency>
+		<targetName>Ugandan shilling</targetName>
+		<exchangeRate>3,749.67948718</exchangeRate>
+		<inverseRate>0.00026669</inverseRate>
+		<inverseDescription>1 Ugandan shilling = 0.00026669 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 0.30731102 KWD</title>
+		<link>http://www.floatrates.com/usd/kwd/</link>
+		<description>1 U.S. Dollar = 0.30731102 Kuwaiti Dinar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>KWD</targetCurrency>
+		<targetName>Kuwaiti Dinar</targetName>
+		<exchangeRate>0.30731102</exchangeRate>
+		<inverseRate>3.25403236</inverseRate>
+		<inverseDescription>1 Kuwaiti Dinar = 3.25403236 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 35.94620145 THB</title>
+		<link>http://www.floatrates.com/usd/thb/</link>
+		<description>1 U.S. Dollar = 35.94620145 Thai Baht</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>THB</targetCurrency>
+		<targetName>Thai Baht</targetName>
+		<exchangeRate>35.94620145</exchangeRate>
+		<inverseRate>0.02781935</inverseRate>
+		<inverseDescription>1 Thai Baht = 0.02781935 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 643.90397757 XOF</title>
+		<link>http://www.floatrates.com/usd/xof/</link>
+		<description>1 U.S. Dollar = 643.90397757 West African CFA Franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>XOF</targetCurrency>
+		<targetName>West African CFA Franc</targetName>
+		<exchangeRate>643.90397757</exchangeRate>
+		<inverseRate>0.00155303</inverseRate>
+		<inverseDescription>1 West African CFA Franc = 0.00155303 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 406.93291135 AMD</title>
+		<link>http://www.floatrates.com/usd/amd/</link>
+		<description>1 U.S. Dollar = 406.93291135 Armenia Dram</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>AMD</targetCurrency>
+		<targetName>Armenia Dram</targetName>
+		<exchangeRate>406.93291135</exchangeRate>
+		<inverseRate>0.00245741</inverseRate>
+		<inverseDescription>1 Armenia Dram = 0.00245741 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 40.12680206 UYU</title>
+		<link>http://www.floatrates.com/usd/uyu/</link>
+		<description>1 U.S. Dollar = 40.12680206 Uruguayan Peso</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>UYU</targetCurrency>
+		<targetName>Uruguayan Peso</targetName>
+		<exchangeRate>40.12680206</exchangeRate>
+		<inverseRate>0.02492100</inverseRate>
+		<inverseDescription>1 Uruguayan Peso = 0.02492100 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 150.46945338 JMD</title>
+		<link>http://www.floatrates.com/usd/jmd/</link>
+		<description>1 U.S. Dollar = 150.46945338 Jamaican Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>JMD</targetCurrency>
+		<targetName>Jamaican Dollar</targetName>
+		<exchangeRate>150.46945338</exchangeRate>
+		<inverseRate>0.00664587</inverseRate>
+		<inverseDescription>1 Jamaican Dollar = 0.00664587 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 510.70610062 SSP</title>
+		<link>http://www.floatrates.com/usd/ssp/</link>
+		<description>1 U.S. Dollar = 510.70610062 South Sudanese pound</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SSP</targetCurrency>
+		<targetName>South Sudanese pound</targetName>
+		<exchangeRate>510.70610062</exchangeRate>
+		<inverseRate>0.00195807</inverseRate>
+		<inverseDescription>1 South Sudanese pound = 0.00195807 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2.35724360 TOP</title>
+		<link>http://www.floatrates.com/usd/top/</link>
+		<description>1 U.S. Dollar = 2.35724360 Tongan paʻanga</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>TOP</targetCurrency>
+		<targetName>Tongan paʻanga</targetName>
+		<exchangeRate>2.35724360</exchangeRate>
+		<inverseRate>0.42422429</inverseRate>
+		<inverseDescription>1 Tongan paʻanga = 0.42422429 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 118.08226091 VUV</title>
+		<link>http://www.floatrates.com/usd/vuv/</link>
+		<description>1 U.S. Dollar = 118.08226091 Vanuatu vatu</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>VUV</targetCurrency>
+		<targetName>Vanuatu vatu</targetName>
+		<exchangeRate>118.08226091</exchangeRate>
+		<inverseRate>0.00846867</inverseRate>
+		<inverseDescription>1 Vanuatu vatu = 0.00846867 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 0.38484613 OMR</title>
+		<link>http://www.floatrates.com/usd/omr/</link>
+		<description>1 U.S. Dollar = 0.38484613 Omani Rial</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>OMR</targetCurrency>
+		<targetName>Omani Rial</targetName>
+		<exchangeRate>0.38484613</exchangeRate>
+		<inverseRate>2.59844108</inverseRate>
+		<inverseDescription>1 Omani Rial = 2.59844108 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3.52280785 ILS</title>
+		<link>http://www.floatrates.com/usd/ils/</link>
+		<description>1 U.S. Dollar = 3.52280785 Israeli New Sheqel</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ILS</targetCurrency>
+		<targetName>Israeli New Sheqel</targetName>
+		<exchangeRate>3.52280785</exchangeRate>
+		<inverseRate>0.28386448</inverseRate>
+		<inverseDescription>1 Israeli New Sheqel = 0.28386448 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3.52180911 PGK</title>
+		<link>http://www.floatrates.com/usd/pgk/</link>
+		<description>1 U.S. Dollar = 3.52180911 Papua New Guinean kina</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>PGK</targetCurrency>
+		<targetName>Papua New Guinean kina</targetName>
+		<exchangeRate>3.52180911</exchangeRate>
+		<inverseRate>0.28394498</inverseRate>
+		<inverseDescription>1 Papua New Guinean kina = 0.28394498 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 79.50697689 KGS</title>
+		<link>http://www.floatrates.com/usd/kgs/</link>
+		<description>1 U.S. Dollar = 79.50697689 Kyrgyzstan Som</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>KGS</targetCurrency>
+		<targetName>Kyrgyzstan Som</targetName>
+		<exchangeRate>79.50697689</exchangeRate>
+		<inverseRate>0.01257751</inverseRate>
+		<inverseDescription>1 Kyrgyzstan Som = 0.01257751 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 4,094.13823272 MGA</title>
+		<link>http://www.floatrates.com/usd/mga/</link>
+		<description>1 U.S. Dollar = 4,094.13823272 Malagasy ariary</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MGA</targetCurrency>
+		<targetName>Malagasy ariary</targetName>
+		<exchangeRate>4,094.13823272</exchangeRate>
+		<inverseRate>0.00024425</inverseRate>
+		<inverseDescription>1 Malagasy ariary = 0.00024425 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 22.35833731 SRD</title>
+		<link>http://www.floatrates.com/usd/srd/</link>
+		<description>1 U.S. Dollar = 22.35833731 Surinamese dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SRD</targetCurrency>
+		<targetName>Surinamese dollar</targetName>
+		<exchangeRate>22.35833731</exchangeRate>
+		<inverseRate>0.04472604</inverseRate>
+		<inverseDescription>1 Surinamese dollar = 0.04472604 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 8.02538158 GHS</title>
+		<link>http://www.floatrates.com/usd/ghs/</link>
+		<description>1 U.S. Dollar = 8.02538158 Ghanaian Cedi</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GHS</targetCurrency>
+		<targetName>Ghanaian Cedi</targetName>
+		<exchangeRate>8.02538158</exchangeRate>
+		<inverseRate>0.12460467</inverseRate>
+		<inverseDescription>1 Ghanaian Cedi = 0.12460467 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 12.56605800 BWP</title>
+		<link>http://www.floatrates.com/usd/bwp/</link>
+		<description>1 U.S. Dollar = 12.56605800 Botswana Pula</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BWP</targetCurrency>
+		<targetName>Botswana Pula</targetName>
+		<exchangeRate>12.56605800</exchangeRate>
+		<inverseRate>0.07957945</inverseRate>
+		<inverseDescription>1 Botswana Pula = 0.07957945 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 10.54791667 SEK</title>
+		<link>http://www.floatrates.com/usd/sek/</link>
+		<description>1 U.S. Dollar = 10.54791667 Swedish Krona</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SEK</targetCurrency>
+		<targetName>Swedish Krona</targetName>
+		<exchangeRate>10.54791667</exchangeRate>
+		<inverseRate>0.09480545</inverseRate>
+		<inverseDescription>1 Swedish Krona = 0.09480545 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.40532201 SGD</title>
+		<link>http://www.floatrates.com/usd/sgd/</link>
+		<description>1 U.S. Dollar = 1.40532201 Singapore Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SGD</targetCurrency>
+		<targetName>Singapore Dollar</targetName>
+		<exchangeRate>1.40532201</exchangeRate>
+		<inverseRate>0.71158069</inverseRate>
+		<inverseDescription>1 Singapore Dollar = 0.71158069 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 404.15175299 HUF</title>
+		<link>http://www.floatrates.com/usd/huf/</link>
+		<description>1 U.S. Dollar = 404.15175299 Hungarian Forint</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>HUF</targetCurrency>
+		<targetName>Hungarian Forint</targetName>
+		<exchangeRate>404.15175299</exchangeRate>
+		<inverseRate>0.00247432</inverseRate>
+		<inverseDescription>1 Hungarian Forint = 0.00247432 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 63.31199281 RUB</title>
+		<link>http://www.floatrates.com/usd/rub/</link>
+		<description>1 U.S. Dollar = 63.31199281 Russian Rouble</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>RUB</targetCurrency>
+		<targetName>Russian Rouble</targetName>
+		<exchangeRate>63.31199281</exchangeRate>
+		<inverseRate>0.01579480</inverseRate>
+		<inverseDescription>1 Russian Rouble = 0.01579480 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 113.26956025 RSD</title>
+		<link>http://www.floatrates.com/usd/rsd/</link>
+		<description>1 U.S. Dollar = 113.26956025 Serbian Dinar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>RSD</targetCurrency>
+		<targetName>Serbian Dinar</targetName>
+		<exchangeRate>113.26956025</exchangeRate>
+		<inverseRate>0.00882850</inverseRate>
+		<inverseDescription>1 Serbian Dinar = 0.00882850 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 35.91404451 NIO</title>
+		<link>http://www.floatrates.com/usd/nio/</link>
+		<description>1 U.S. Dollar = 35.91404451 Nicaraguan Córdoba</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>NIO</targetCurrency>
+		<targetName>Nicaraguan Córdoba</targetName>
+		<exchangeRate>35.91404451</exchangeRate>
+		<inverseRate>0.02784426</inverseRate>
+		<inverseDescription>1 Nicaraguan Córdoba = 0.02784426 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 8.11585154 SBD</title>
+		<link>http://www.floatrates.com/usd/sbd/</link>
+		<description>1 U.S. Dollar = 8.11585154 Solomon Islands dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SBD</targetCurrency>
+		<targetName>Solomon Islands dollar</targetName>
+		<exchangeRate>8.11585154</exchangeRate>
+		<inverseRate>0.12321566</inverseRate>
+		<inverseDescription>1 Solomon Islands dollar = 0.12321566 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 16.39663630 ZMW</title>
+		<link>http://www.floatrates.com/usd/zmw/</link>
+		<description>1 U.S. Dollar = 16.39663630 Zambian kwacha</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ZMW</targetCurrency>
+		<targetName>Zambian kwacha</targetName>
+		<exchangeRate>16.39663630</exchangeRate>
+		<inverseRate>0.06098812</inverseRate>
+		<inverseDescription>1 Zambian kwacha = 0.06098812 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 4,079.86050567 KHR</title>
+		<link>http://www.floatrates.com/usd/khr/</link>
+		<description>1 U.S. Dollar = 4,079.86050567 Cambodian riel</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>KHR</targetCurrency>
+		<targetName>Cambodian riel</targetName>
+		<exchangeRate>4,079.86050567</exchangeRate>
+		<inverseRate>0.00024511</inverseRate>
+		<inverseDescription>1 Cambodian riel = 0.00024511 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 54.72788347 DOP</title>
+		<link>http://www.floatrates.com/usd/dop/</link>
+		<description>1 U.S. Dollar = 54.72788347 Dominican Peso</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>DOP</targetCurrency>
+		<targetName>Dominican Peso</targetName>
+		<exchangeRate>54.72788347</exchangeRate>
+		<inverseRate>0.01827222</inverseRate>
+		<inverseDescription>1 Dominican Peso = 0.01827222 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 6.70844255 CNY</title>
+		<link>http://www.floatrates.com/usd/cny/</link>
+		<description>1 U.S. Dollar = 6.70844255 Chinese Yuan</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CNY</targetCurrency>
+		<targetName>Chinese Yuan</targetName>
+		<exchangeRate>6.70844255</exchangeRate>
+		<inverseRate>0.14906590</inverseRate>
+		<inverseDescription>1 Chinese Yuan = 0.14906590 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 136.05413842 ISK</title>
+		<link>http://www.floatrates.com/usd/isk/</link>
+		<description>1 U.S. Dollar = 136.05413842 Icelandic Krona</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ISK</targetCurrency>
+		<targetName>Icelandic Krona</targetName>
+		<exchangeRate>136.05413842</exchangeRate>
+		<inverseRate>0.00735002</inverseRate>
+		<inverseDescription>1 Icelandic Krona = 0.00735002 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 146.57616576 DZD</title>
+		<link>http://www.floatrates.com/usd/dzd/</link>
+		<description>1 U.S. Dollar = 146.57616576 Algerian Dinar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>DZD</targetCurrency>
+		<targetName>Algerian Dinar</targetName>
+		<exchangeRate>146.57616576</exchangeRate>
+		<inverseRate>0.00682239</inverseRate>
+		<inverseDescription>1 Algerian Dinar = 0.00682239 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 126.42870003 ARS</title>
+		<link>http://www.floatrates.com/usd/ars/</link>
+		<description>1 U.S. Dollar = 126.42870003 Argentine Peso</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ARS</targetCurrency>
+		<targetName>Argentine Peso</targetName>
+		<exchangeRate>126.42870003</exchangeRate>
+		<inverseRate>0.00790960</inverseRate>
+		<inverseDescription>1 Argentine Peso = 0.00790960 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 24.17148760 STN</title>
+		<link>http://www.floatrates.com/usd/stn/</link>
+		<description>1 U.S. Dollar = 24.17148760 São Tomé and Príncipe Dobra</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>STN</targetCurrency>
+		<targetName>São Tomé and Príncipe Dobra</targetName>
+		<exchangeRate>24.17148760</exchangeRate>
+		<inverseRate>0.04137106</inverseRate>
+		<inverseDescription>1 São Tomé and Príncipe Dobra = 0.04137106 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2,061.49779736 BIF</title>
+		<link>http://www.floatrates.com/usd/bif/</link>
+		<description>1 U.S. Dollar = 2,061.49779736 Burundian franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BIF</targetCurrency>
+		<targetName>Burundian franc</targetName>
+		<exchangeRate>2,061.49779736</exchangeRate>
+		<inverseRate>0.00048508</inverseRate>
+		<inverseDescription>1 Burundian franc = 0.00048508 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 115.75432261 ALL</title>
+		<link>http://www.floatrates.com/usd/all/</link>
+		<description>1 U.S. Dollar = 115.75432261 Albanian lek</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ALL</targetCurrency>
+		<targetName>Albanian lek</targetName>
+		<exchangeRate>115.75432261</exchangeRate>
+		<inverseRate>0.00863899</inverseRate>
+		<inverseDescription>1 Albanian lek = 0.00863899 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 12.89146006 SCR</title>
+		<link>http://www.floatrates.com/usd/scr/</link>
+		<description>1 U.S. Dollar = 12.89146006 Seychelles rupee</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SCR</targetCurrency>
+		<targetName>Seychelles rupee</targetName>
+		<exchangeRate>12.89146006</exchangeRate>
+		<inverseRate>0.07757073</inverseRate>
+		<inverseDescription>1 Seychelles rupee = 0.07757073 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.79343513 ANG</title>
+		<link>http://www.floatrates.com/usd/ang/</link>
+		<description>1 U.S. Dollar = 1.79343513 Neth. Antillean Guilder</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ANG</targetCurrency>
+		<targetName>Neth. Antillean Guilder</targetName>
+		<exchangeRate>1.79343513</exchangeRate>
+		<inverseRate>0.55758917</inverseRate>
+		<inverseDescription>1 Neth. Antillean Guilder = 0.55758917 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1,508.74740311 LBP</title>
+		<link>http://www.floatrates.com/usd/lbp/</link>
+		<description>1 U.S. Dollar = 1,508.74740311 Lebanese Pound</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>LBP</targetCurrency>
+		<targetName>Lebanese Pound</targetName>
+		<exchangeRate>1,508.74740311</exchangeRate>
+		<inverseRate>0.00066280</inverseRate>
+		<inverseDescription>1 Lebanese Pound = 0.00066280 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 20.68004737 MXN</title>
+		<link>http://www.floatrates.com/usd/mxn/</link>
+		<description>1 U.S. Dollar = 20.68004737 Mexican Peso</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MXN</targetCurrency>
+		<targetName>Mexican Peso</targetName>
+		<exchangeRate>20.68004737</exchangeRate>
+		<inverseRate>0.04835579</inverseRate>
+		<inverseDescription>1 Mexican Peso = 0.04835579 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 29.49684628 UAH</title>
+		<link>http://www.floatrates.com/usd/uah/</link>
+		<description>1 U.S. Dollar = 29.49684628 Ukrainian Hryvnia</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>UAH</targetCurrency>
+		<targetName>Ukrainian Hryvnia</targetName>
+		<exchangeRate>29.49684628</exchangeRate>
+		<inverseRate>0.03390193</inverseRate>
+		<inverseDescription>1 Ukrainian Hryvnia = 0.03390193 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 690.13418037 CRC</title>
+		<link>http://www.floatrates.com/usd/crc/</link>
+		<description>1 U.S. Dollar = 690.13418037 Costa Rican Colón</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CRC</targetCurrency>
+		<targetName>Costa Rican Colón</targetName>
+		<exchangeRate>690.13418037</exchangeRate>
+		<inverseRate>0.00144899</inverseRate>
+		<inverseDescription>1 Costa Rican Colón = 0.00144899 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2.01854807 BZD</title>
+		<link>http://www.floatrates.com/usd/bzd/</link>
+		<description>1 U.S. Dollar = 2.01854807 Belize dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BZD</targetCurrency>
+		<targetName>Belize dollar</targetName>
+		<exchangeRate>2.01854807</exchangeRate>
+		<inverseRate>0.49540559</inverseRate>
+		<inverseDescription>1 Belize dollar = 0.49540559 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 8,698.14126394 GNF</title>
+		<link>http://www.floatrates.com/usd/gnf/</link>
+		<description>1 U.S. Dollar = 8,698.14126394 Guinean franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GNF</targetCurrency>
+		<targetName>Guinean franc</targetName>
+		<exchangeRate>8,698.14126394</exchangeRate>
+		<inverseRate>0.00011497</inverseRate>
+		<inverseDescription>1 Guinean franc = 0.00011497 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 16.66524217 LSL</title>
+		<link>http://www.floatrates.com/usd/lsl/</link>
+		<description>1 U.S. Dollar = 16.66524217 Lesotho loti</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>LSL</targetCurrency>
+		<targetName>Lesotho loti</targetName>
+		<exchangeRate>16.66524217</exchangeRate>
+		<inverseRate>0.06000513</inverseRate>
+		<inverseDescription>1 Lesotho loti = 0.06000513 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2,335.12974052 TZS</title>
+		<link>http://www.floatrates.com/usd/tzs/</link>
+		<description>1 U.S. Dollar = 2,335.12974052 Tanzanian shilling</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>TZS</targetCurrency>
+		<targetName>Tanzanian shilling</targetName>
+		<exchangeRate>2,335.12974052</exchangeRate>
+		<inverseRate>0.00042824</inverseRate>
+		<inverseDescription>1 Tanzanian shilling = 0.00042824 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 0.70923069 JOD</title>
+		<link>http://www.floatrates.com/usd/jod/</link>
+		<description>1 U.S. Dollar = 0.70923069 Jordanian Dinar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>JOD</targetCurrency>
+		<targetName>Jordanian Dinar</targetName>
+		<exchangeRate>0.70923069</exchangeRate>
+		<inverseRate>1.40997847</inverseRate>
+		<inverseDescription>1 Jordanian Dinar = 1.40997847 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 55.76630738 PHP</title>
+		<link>http://www.floatrates.com/usd/php/</link>
+		<description>1 U.S. Dollar = 55.76630738 Philippine Peso</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>PHP</targetCurrency>
+		<targetName>Philippine Peso</targetName>
+		<exchangeRate>55.76630738</exchangeRate>
+		<inverseRate>0.01793197</inverseRate>
+		<inverseDescription>1 Philippine Peso = 0.01793197 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 644.34124497 XAF</title>
+		<link>http://www.floatrates.com/usd/xaf/</link>
+		<description>1 U.S. Dollar = 644.34124497 Central African CFA Franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>XAF</targetCurrency>
+		<targetName>Central African CFA Franc</targetName>
+		<exchangeRate>644.34124497</exchangeRate>
+		<inverseRate>0.00155197</inverseRate>
+		<inverseDescription>1 Central African CFA Franc = 0.00155197 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.69658157 AZN</title>
+		<link>http://www.floatrates.com/usd/azn/</link>
+		<description>1 U.S. Dollar = 1.69658157 Azerbaijan Manat</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>AZN</targetCurrency>
+		<targetName>Azerbaijan Manat</targetName>
+		<exchangeRate>1.69658157</exchangeRate>
+		<inverseRate>0.58942053</inverseRate>
+		<inverseDescription>1 Azerbaijan Manat = 0.58942053 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 6,860.79178886 PYG</title>
+		<link>http://www.floatrates.com/usd/pyg/</link>
+		<description>1 U.S. Dollar = 6,860.79178886 Paraguayan Guaraní</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>PYG</targetCurrency>
+		<targetName>Paraguayan Guaraní</targetName>
+		<exchangeRate>6,860.79178886</exchangeRate>
+		<inverseRate>0.00014576</inverseRate>
+		<inverseDescription>1 Paraguayan Guaraní = 0.00014576 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 209.56560681 GYD</title>
+		<link>http://www.floatrates.com/usd/gyd/</link>
+		<description>1 U.S. Dollar = 209.56560681 Guyanese dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GYD</targetCurrency>
+		<targetName>Guyanese dollar</targetName>
+		<exchangeRate>209.56560681</exchangeRate>
+		<inverseRate>0.00477178</inverseRate>
+		<inverseDescription>1 Guyanese dollar = 0.00477178 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1,024.43082312 RWF</title>
+		<link>http://www.floatrates.com/usd/rwf/</link>
+		<description>1 U.S. Dollar = 1,024.43082312 Rwandan franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>RWF</targetCurrency>
+		<targetName>Rwandan franc</targetName>
+		<exchangeRate>1,024.43082312</exchangeRate>
+		<inverseRate>0.00097615</inverseRate>
+		<inverseDescription>1 Rwandan franc = 0.00097615 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 36.55937500 MRU</title>
+		<link>http://www.floatrates.com/usd/mru/</link>
+		<description>1 U.S. Dollar = 36.55937500 Mauritanian ouguiya</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MRU</targetCurrency>
+		<targetName>Mauritanian ouguiya</targetName>
+		<exchangeRate>36.55937500</exchangeRate>
+		<inverseRate>0.02735277</inverseRate>
+		<inverseDescription>1 Mauritanian ouguiya = 0.02735277 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3,147.00739744 MNT</title>
+		<link>http://www.floatrates.com/usd/mnt/</link>
+		<description>1 U.S. Dollar = 3,147.00739744 Mongolian togrog</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MNT</targetCurrency>
+		<targetName>Mongolian togrog</targetName>
+		<exchangeRate>3,147.00739744</exchangeRate>
+		<inverseRate>0.00031776</inverseRate>
+		<inverseDescription>1 Mongolian togrog = 0.00031776 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.62446141 NZD</title>
+		<link>http://www.floatrates.com/usd/nzd/</link>
+		<description>1 U.S. Dollar = 1.62446141 New Zealand Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>NZD</targetCurrency>
+		<targetName>New Zealand Dollar</targetName>
+		<exchangeRate>1.62446141</exchangeRate>
+		<inverseRate>0.61558865</inverseRate>
+		<inverseDescription>1 New Zealand Dollar = 0.61558865 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 17.23423907 TRY</title>
+		<link>http://www.floatrates.com/usd/try/</link>
+		<description>1 U.S. Dollar = 17.23423907 Turkish Lira</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>TRY</targetCurrency>
+		<targetName>Turkish Lira</targetName>
+		<exchangeRate>17.23423907</exchangeRate>
+		<inverseRate>0.05802403</inverseRate>
+		<inverseDescription>1 Turkish Lira = 0.05802403 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 23,346.11000995 VND</title>
+		<link>http://www.floatrates.com/usd/vnd/</link>
+		<description>1 U.S. Dollar = 23,346.11000995 Vietnamese Dong</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>VND</targetCurrency>
+		<targetName>Vietnamese Dong</targetName>
+		<exchangeRate>23,346.11000995</exchangeRate>
+		<inverseRate>0.00004283</inverseRate>
+		<inverseDescription>1 Vietnamese Dong = 0.00004283 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1,460.10655786 IQD</title>
+		<link>http://www.floatrates.com/usd/iqd/</link>
+		<description>1 U.S. Dollar = 1,460.10655786 Iraqi dinar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>IQD</targetCurrency>
+		<targetName>Iraqi dinar</targetName>
+		<exchangeRate>1,460.10655786</exchangeRate>
+		<inverseRate>0.00068488</inverseRate>
+		<inverseDescription>1 Iraqi dinar = 0.00068488 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 87.84846721 AFN</title>
+		<link>http://www.floatrates.com/usd/afn/</link>
+		<description>1 U.S. Dollar = 87.84846721 Afghan afghani</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>AFN</targetCurrency>
+		<targetName>Afghan afghani</targetName>
+		<exchangeRate>87.84846721</exchangeRate>
+		<inverseRate>0.01138324</inverseRate>
+		<inverseDescription>1 Afghan afghani = 0.01138324 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 16.65930936 NAD</title>
+		<link>http://www.floatrates.com/usd/nad/</link>
+		<description>1 U.S. Dollar = 16.65930936 Namibian dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>NAD</targetCurrency>
+		<targetName>Namibian dollar</targetName>
+		<exchangeRate>16.65930936</exchangeRate>
+		<inverseRate>0.06002650</inverseRate>
+		<inverseDescription>1 Namibian dollar = 0.06002650 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2,462.94736842 SYP</title>
+		<link>http://www.floatrates.com/usd/syp/</link>
+		<description>1 U.S. Dollar = 2,462.94736842 Syrian pound</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SYP</targetCurrency>
+		<targetName>Syrian pound</targetName>
+		<exchangeRate>2,462.94736842</exchangeRate>
+		<inverseRate>0.00040602</inverseRate>
+		<inverseDescription>1 Syrian pound = 0.00040602 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.00000000 CUP</title>
+		<link>http://www.floatrates.com/usd/cup/</link>
+		<description>1 U.S. Dollar = 1.00000000 Cuban peso</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CUP</targetCurrency>
+		<targetName>Cuban peso</targetName>
+		<exchangeRate>1.00000000</exchangeRate>
+		<inverseRate>1.00000000</inverseRate>
+		<inverseDescription>1 Cuban peso = 1.00000000 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 10.12045787 NOK</title>
+		<link>http://www.floatrates.com/usd/nok/</link>
+		<description>1 U.S. Dollar = 10.12045787 Norwegian Krone</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>NOK</targetCurrency>
+		<targetName>Norwegian Krone</targetName>
+		<exchangeRate>10.12045787</exchangeRate>
+		<inverseRate>0.09880976</inverseRate>
+		<inverseDescription>1 Norwegian Krone = 0.09880976 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3.66219088 QAR</title>
+		<link>http://www.floatrates.com/usd/qar/</link>
+		<description>1 U.S. Dollar = 3.66219088 Qatari Rial</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>QAR</targetCurrency>
+		<targetName>Qatari Rial</targetName>
+		<exchangeRate>3.66219088</exchangeRate>
+		<inverseRate>0.27306059</inverseRate>
+		<inverseDescription>1 Qatari Rial = 0.27306059 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 24.32759703 CZK</title>
+		<link>http://www.floatrates.com/usd/czk/</link>
+		<description>1 U.S. Dollar = 24.32759703 Czech Koruna</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CZK</targetCurrency>
+		<targetName>Czech Koruna</targetName>
+		<exchangeRate>24.32759703</exchangeRate>
+		<inverseRate>0.04110558</inverseRate>
+		<inverseDescription>1 Czech Koruna = 0.04110558 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3.87731119 PEN</title>
+		<link>http://www.floatrates.com/usd/pen/</link>
+		<description>1 U.S. Dollar = 3.87731119 Peruvian Nuevo Sol</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>PEN</targetCurrency>
+		<targetName>Peruvian Nuevo Sol</targetName>
+		<exchangeRate>3.87731119</exchangeRate>
+		<inverseRate>0.25791069</inverseRate>
+		<inverseDescription>1 Peruvian Nuevo Sol = 0.25791069 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3.49995173 TMT</title>
+		<link>http://www.floatrates.com/usd/tmt/</link>
+		<description>1 U.S. Dollar = 3.49995173 New Turkmenistan Manat</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>TMT</targetCurrency>
+		<targetName>New Turkmenistan Manat</targetName>
+		<exchangeRate>3.49995173</exchangeRate>
+		<inverseRate>0.28571823</inverseRate>
+		<inverseDescription>1 New Turkmenistan Manat = 0.28571823 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 8.76657924 SVC</title>
+		<link>http://www.floatrates.com/usd/svc/</link>
+		<description>1 U.S. Dollar = 8.76657924 Salvadoran colon</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SVC</targetCurrency>
+		<targetName>Salvadoran colon</targetName>
+		<exchangeRate>8.76657924</exchangeRate>
+		<inverseRate>0.11406958</inverseRate>
+		<inverseDescription>1 Salvadoran colon = 0.11406958 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2.71359814 XCD</title>
+		<link>http://www.floatrates.com/usd/xcd/</link>
+		<description>1 U.S. Dollar = 2.71359814 East Caribbean Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>XCD</targetCurrency>
+		<targetName>East Caribbean Dollar</targetName>
+		<exchangeRate>2.71359814</exchangeRate>
+		<inverseRate>0.36851440</inverseRate>
+		<inverseDescription>1 East Caribbean Dollar = 0.36851440 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1,024.43082312 MWK</title>
+		<link>http://www.floatrates.com/usd/mwk/</link>
+		<description>1 U.S. Dollar = 1,024.43082312 Malawian kwacha</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MWK</targetCurrency>
+		<targetName>Malawian kwacha</targetName>
+		<exchangeRate>1,024.43082312</exchangeRate>
+		<inverseRate>0.00097615</inverseRate>
+		<inverseDescription>1 Malawian kwacha = 0.00097615 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 250.52733016 YER</title>
+		<link>http://www.floatrates.com/usd/yer/</link>
+		<description>1 U.S. Dollar = 250.52733016 Yemeni rial</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>YER</targetCurrency>
+		<targetName>Yemeni rial</targetName>
+		<exchangeRate>250.52733016</exchangeRate>
+		<inverseRate>0.00399158</inverseRate>
+		<inverseDescription>1 Yemeni rial = 0.00399158 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 5.54454991 VES</title>
+		<link>http://www.floatrates.com/usd/ves/</link>
+		<description>1 U.S. Dollar = 5.54454991 Venezuelan Bolivar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>VES</targetCurrency>
+		<targetName>Venezuelan Bolivar</targetName>
+		<exchangeRate>5.54454991</exchangeRate>
+		<inverseRate>0.18035729</inverseRate>
+		<inverseDescription>1 Venezuelan Bolivar = 0.18035729 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 93.45411726 BDT</title>
+		<link>http://www.floatrates.com/usd/bdt/</link>
+		<description>1 U.S. Dollar = 93.45411726 Bangladeshi taka</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BDT</targetCurrency>
+		<targetName>Bangladeshi taka</targetName>
+		<exchangeRate>93.45411726</exchangeRate>
+		<inverseRate>0.01070044</inverseRate>
+		<inverseDescription>1 Bangladeshi taka = 0.01070044 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 4.85446029 RON</title>
+		<link>http://www.floatrates.com/usd/ron/</link>
+		<description>1 U.S. Dollar = 4.85446029 Romanian New Leu</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>RON</targetCurrency>
+		<targetName>Romanian New Leu</targetName>
+		<exchangeRate>4.85446029</exchangeRate>
+		<inverseRate>0.20599612</inverseRate>
+		<inverseDescription>1 Romanian New Leu = 0.20599612 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 0.83622458 GIP</title>
+		<link>http://www.floatrates.com/usd/gip/</link>
+		<description>1 U.S. Dollar = 0.83622458 Gibraltar pound</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GIP</targetCurrency>
+		<targetName>Gibraltar pound</targetName>
+		<exchangeRate>0.83622458</exchangeRate>
+		<inverseRate>1.19585101</inverseRate>
+		<inverseDescription>1 Gibraltar pound = 1.19585101 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2.92446373 GEL</title>
+		<link>http://www.floatrates.com/usd/gel/</link>
+		<description>1 U.S. Dollar = 2.92446373 Georgian lari</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GEL</targetCurrency>
+		<targetName>Georgian lari</targetName>
+		<exchangeRate>2.92446373</exchangeRate>
+		<inverseRate>0.34194303</inverseRate>
+		<inverseDescription>1 Georgian lari = 0.34194303 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 60.15219291 MKD</title>
+		<link>http://www.floatrates.com/usd/mkd/</link>
+		<description>1 U.S. Dollar = 60.15219291 Macedonian denar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MKD</targetCurrency>
+		<targetName>Macedonian denar</targetName>
+		<exchangeRate>60.15219291</exchangeRate>
+		<inverseRate>0.01662450</inverseRate>
+		<inverseDescription>1 Macedonian denar = 0.01662450 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.81260410 AWG</title>
+		<link>http://www.floatrates.com/usd/awg/</link>
+		<description>1 U.S. Dollar = 1.81260410 Aruban florin</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>AWG</targetCurrency>
+		<targetName>Aruban florin</targetName>
+		<exchangeRate>1.81260410</exchangeRate>
+		<inverseRate>0.55169245</inverseRate>
+		<inverseDescription>1 Aruban florin = 0.55169245 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1,854.04120444 MMK</title>
+		<link>http://www.floatrates.com/usd/mmk/</link>
+		<description>1 U.S. Dollar = 1,854.04120444 Myanma Kyat</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MMK</targetCurrency>
+		<targetName>Myanma Kyat</targetName>
+		<exchangeRate>1,854.04120444</exchangeRate>
+		<inverseRate>0.00053936</inverseRate>
+		<inverseDescription>1 Myanma Kyat = 0.00053936 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 45.56572541 MUR</title>
+		<link>http://www.floatrates.com/usd/mur/</link>
+		<description>1 U.S. Dollar = 45.56572541 Mauritian Rupee</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MUR</targetCurrency>
+		<targetName>Mauritian Rupee</targetName>
+		<exchangeRate>45.56572541</exchangeRate>
+		<inverseRate>0.02194632</inverseRate>
+		<inverseDescription>1 Mauritian Rupee = 0.02194632 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3.67333086 AED</title>
+		<link>http://www.floatrates.com/usd/aed/</link>
+		<description>1 U.S. Dollar = 3.67333086 U.A.E Dirham</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>AED</targetCurrency>
+		<targetName>U.A.E Dirham</targetName>
+		<exchangeRate>3.67333086</exchangeRate>
+		<inverseRate>0.27223249</inverseRate>
+		<inverseDescription>1 U.A.E Dirham = 0.27223249 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 15,001.33230123 IDR</title>
+		<link>http://www.floatrates.com/usd/idr/</link>
+		<description>1 U.S. Dollar = 15,001.33230123 Indonesian Rupiah</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>IDR</targetCurrency>
+		<targetName>Indonesian Rupiah</targetName>
+		<exchangeRate>15,001.33230123</exchangeRate>
+		<inverseRate>0.00006666</inverseRate>
+		<inverseDescription>1 Indonesian Rupiah = 0.00006666 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1,306.61410103 KRW</title>
+		<link>http://www.floatrates.com/usd/krw/</link>
+		<description>1 U.S. Dollar = 1,306.61410103 South Korean Won</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>KRW</targetCurrency>
+		<targetName>South Korean Won</targetName>
+		<exchangeRate>1,306.61410103</exchangeRate>
+		<inverseRate>0.00076534</inverseRate>
+		<inverseDescription>1 South Korean Won = 0.00076534 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 36.34937650 MRO</title>
+		<link>http://www.floatrates.com/usd/mro/</link>
+		<description>1 U.S. Dollar = 36.34937650 Mauritanian Ouguiya</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MRO</targetCurrency>
+		<targetName>Mauritanian Ouguiya</targetName>
+		<exchangeRate>36.34937650</exchangeRate>
+		<inverseRate>0.02751079</inverseRate>
+		<inverseDescription>1 Mauritanian Ouguiya = 0.02751079 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 4,313.56006862 COP</title>
+		<link>http://www.floatrates.com/usd/cop/</link>
+		<description>1 U.S. Dollar = 4,313.56006862 Colombian Peso</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>COP</targetCurrency>
+		<targetName>Colombian Peso</targetName>
+		<exchangeRate>4,313.56006862</exchangeRate>
+		<inverseRate>0.00023183</inverseRate>
+		<inverseDescription>1 Colombian Peso = 0.00023183 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2.02186217 BBD</title>
+		<link>http://www.floatrates.com/usd/bbd/</link>
+		<description>1 U.S. Dollar = 2.02186217 Barbadian Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BBD</targetCurrency>
+		<targetName>Barbadian Dollar</targetName>
+		<exchangeRate>2.02186217</exchangeRate>
+		<inverseRate>0.49459356</inverseRate>
+		<inverseDescription>1 Barbadian Dollar = 0.49459356 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 178.27047619 DJF</title>
+		<link>http://www.floatrates.com/usd/djf/</link>
+		<description>1 U.S. Dollar = 178.27047619 Djiboutian franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>DJF</targetCurrency>
+		<targetName>Djiboutian franc</targetName>
+		<exchangeRate>178.27047619</exchangeRate>
+		<inverseRate>0.00560945</inverseRate>
+		<inverseDescription>1 Djiboutian franc = 0.00560945 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 16.64153627 SZL</title>
+		<link>http://www.floatrates.com/usd/szl/</link>
+		<description>1 U.S. Dollar = 16.64153627 Swazi lilangeni</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SZL</targetCurrency>
+		<targetName>Swazi lilangeni</targetName>
+		<exchangeRate>16.64153627</exchangeRate>
+		<inverseRate>0.06009061</inverseRate>
+		<inverseDescription>1 Swazi lilangeni = 0.06009061 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 578.29955512 SOS</title>
+		<link>http://www.floatrates.com/usd/sos/</link>
+		<description>1 U.S. Dollar = 578.29955512 Somali shilling</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SOS</targetCurrency>
+		<targetName>Somali shilling</targetName>
+		<exchangeRate>578.29955512</exchangeRate>
+		<inverseRate>0.00172921</inverseRate>
+		<inverseDescription>1 Somali shilling = 0.00172921 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 79.11971695 INR</title>
+		<link>http://www.floatrates.com/usd/inr/</link>
+		<description>1 U.S. Dollar = 79.11971695 Indian Rupee</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>INR</targetCurrency>
+		<targetName>Indian Rupee</targetName>
+		<exchangeRate>79.11971695</exchangeRate>
+		<inverseRate>0.01263907</inverseRate>
+		<inverseDescription>1 Indian Rupee = 0.01263907 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 127.02610926 NPR</title>
+		<link>http://www.floatrates.com/usd/npr/</link>
+		<description>1 U.S. Dollar = 127.02610926 Nepalese Rupee</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>NPR</targetCurrency>
+		<targetName>Nepalese Rupee</targetName>
+		<exchangeRate>127.02610926</exchangeRate>
+		<inverseRate>0.00787240</inverseRate>
+		<inverseDescription>1 Nepalese Rupee = 0.00787240 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 16.76832027 ZAR</title>
+		<link>http://www.floatrates.com/usd/zar/</link>
+		<description>1 U.S. Dollar = 16.76832027 South African Rand</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ZAR</targetCurrency>
+		<targetName>South African Rand</targetName>
+		<exchangeRate>16.76832027</exchangeRate>
+		<inverseRate>0.05963627</inverseRate>
+		<inverseDescription>1 South African Rand = 0.05963627 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 19.15006018 MDL</title>
+		<link>http://www.floatrates.com/usd/mdl/</link>
+		<description>1 U.S. Dollar = 19.15006018 Moldova Lei</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MDL</targetCurrency>
+		<targetName>Moldova Lei</targetName>
+		<exchangeRate>19.15006018</exchangeRate>
+		<inverseRate>0.05221916</inverseRate>
+		<inverseDescription>1 Moldova Lei = 0.05221916 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.00000000 PAB</title>
+		<link>http://www.floatrates.com/usd/pab/</link>
+		<description>1 U.S. Dollar = 1.00000000 Panamanian Balboa</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>PAB</targetCurrency>
+		<targetName>Panamanian Balboa</targetName>
+		<exchangeRate>1.00000000</exchangeRate>
+		<inverseRate>1.00000000</inverseRate>
+		<inverseDescription>1 Panamanian Balboa = 1.00000000 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2.21739955 FJD</title>
+		<link>http://www.floatrates.com/usd/fjd/</link>
+		<description>1 U.S. Dollar = 2.21739955 Fiji Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>FJD</targetCurrency>
+		<targetName>Fiji Dollar</targetName>
+		<exchangeRate>2.21739955</exchangeRate>
+		<inverseRate>0.45097872</inverseRate>
+		<inverseDescription>1 Fiji Dollar = 0.45097872 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2,003.25342466 CDF</title>
+		<link>http://www.floatrates.com/usd/cdf/</link>
+		<description>1 U.S. Dollar = 2,003.25342466 Congolese franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CDF</targetCurrency>
+		<targetName>Congolese franc</targetName>
+		<exchangeRate>2,003.25342466</exchangeRate>
+		<inverseRate>0.00049919</inverseRate>
+		<inverseDescription>1 Congolese franc = 0.00049919 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 15.10035495 ERN</title>
+		<link>http://www.floatrates.com/usd/ern/</link>
+		<description>1 U.S. Dollar = 15.10035495 Eritrean nakfa</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ERN</targetCurrency>
+		<targetName>Eritrean nakfa</targetName>
+		<exchangeRate>15.10035495</exchangeRate>
+		<inverseRate>0.06622361</inverseRate>
+		<inverseDescription>1 Eritrean nakfa = 0.06622361 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2.69888690 WST</title>
+		<link>http://www.floatrates.com/usd/wst/</link>
+		<description>1 U.S. Dollar = 2.69888690 Samoan tala</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>WST</targetCurrency>
+		<targetName>Samoan tala</targetName>
+		<exchangeRate>2.69888690</exchangeRate>
+		<inverseRate>0.37052312</inverseRate>
+		<inverseDescription>1 Samoan tala = 0.37052312 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 5.40773807 BRL</title>
+		<link>http://www.floatrates.com/usd/brl/</link>
+		<description>1 U.S. Dollar = 5.40773807 Brazilian Real</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BRL</targetCurrency>
+		<targetName>Brazilian Real</targetName>
+		<exchangeRate>5.40773807</exchangeRate>
+		<inverseRate>0.18492020</inverseRate>
+		<inverseDescription>1 Brazilian Real = 0.18492020 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 7.30346236 DKK</title>
+		<link>http://www.floatrates.com/usd/dkk/</link>
+		<description>1 U.S. Dollar = 7.30346236 Danish Krone</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>DKK</targetCurrency>
+		<targetName>Danish Krone</targetName>
+		<exchangeRate>7.30346236</exchangeRate>
+		<inverseRate>0.13692136</inverseRate>
+		<inverseDescription>1 Danish Krone = 0.13692136 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 361.28911686 LKR</title>
+		<link>http://www.floatrates.com/usd/lkr/</link>
+		<description>1 U.S. Dollar = 361.28911686 Sri Lanka Rupee</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>LKR</targetCurrency>
+		<targetName>Sri Lanka Rupee</targetName>
+		<exchangeRate>361.28911686</exchangeRate>
+		<inverseRate>0.00276787</inverseRate>
+		<inverseDescription>1 Sri Lanka Rupee = 0.00276787 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3.12068595 TND</title>
+		<link>http://www.floatrates.com/usd/tnd/</link>
+		<description>1 U.S. Dollar = 3.12068595 Tunisian Dinar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>TND</targetCurrency>
+		<targetName>Tunisian Dinar</targetName>
+		<exchangeRate>3.12068595</exchangeRate>
+		<inverseRate>0.32044237</inverseRate>
+		<inverseDescription>1 Tunisian Dinar = 0.32044237 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 29.81224661 TWD</title>
+		<link>http://www.floatrates.com/usd/twd/</link>
+		<description>1 U.S. Dollar = 29.81224661 New Taiwan Dollar </description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>TWD</targetCurrency>
+		<targetName>New Taiwan Dollar </targetName>
+		<exchangeRate>29.81224661</exchangeRate>
+		<inverseRate>0.03354326</inverseRate>
+		<inverseDescription>1 New Taiwan Dollar  = 0.03354326 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 42,014.15338767 IRR</title>
+		<link>http://www.floatrates.com/usd/irr/</link>
+		<description>1 U.S. Dollar = 42,014.15338767 Iranian rial</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>IRR</targetCurrency>
+		<targetName>Iranian rial</targetName>
+		<exchangeRate>42,014.15338767</exchangeRate>
+		<inverseRate>0.00002380</inverseRate>
+		<inverseDescription>1 Iranian rial = 0.00002380 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 6.87240106 BOB</title>
+		<link>http://www.floatrates.com/usd/bob/</link>
+		<description>1 U.S. Dollar = 6.87240106 Bolivian Boliviano</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BOB</targetCurrency>
+		<targetName>Bolivian Boliviano</targetName>
+		<exchangeRate>6.87240106</exchangeRate>
+		<inverseRate>0.14550955</inverseRate>
+		<inverseDescription>1 Bolivian Boliviano = 0.14550955 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 152.92810458 LRD</title>
+		<link>http://www.floatrates.com/usd/lrd/</link>
+		<description>1 U.S. Dollar = 152.92810458 Liberian dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>LRD</targetCurrency>
+		<targetName>Liberian dollar</targetName>
+		<exchangeRate>152.92810458</exchangeRate>
+		<inverseRate>0.00653902</inverseRate>
+		<inverseDescription>1 Liberian dollar = 0.00653902 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 570.68292683 SDG</title>
+		<link>http://www.floatrates.com/usd/sdg/</link>
+		<description>1 U.S. Dollar = 570.68292683 Sudanese pound</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SDG</targetCurrency>
+		<targetName>Sudanese pound</targetName>
+		<exchangeRate>570.68292683</exchangeRate>
+		<inverseRate>0.00175229</inverseRate>
+		<inverseDescription>1 Sudanese pound = 0.00175229 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 8.10039813 MOP</title>
+		<link>http://www.floatrates.com/usd/mop/</link>
+		<description>1 U.S. Dollar = 8.10039813 Macanese pataca</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MOP</targetCurrency>
+		<targetName>Macanese pataca</targetName>
+		<exchangeRate>8.10039813</exchangeRate>
+		<inverseRate>0.12345072</inverseRate>
+		<inverseDescription>1 Macanese pataca = 0.12345072 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.91449495 BAM</title>
+		<link>http://www.floatrates.com/usd/bam/</link>
+		<description>1 U.S. Dollar = 1.91449495 Bosnia and Herzegovina convertible mark</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BAM</targetCurrency>
+		<targetName>Bosnia and Herzegovina convertible mark</targetName>
+		<exchangeRate>1.91449495</exchangeRate>
+		<inverseRate>0.52233097</inverseRate>
+		<inverseDescription>1 Bosnia and Herzegovina convertible mark = 0.52233097 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 205.21391299 PKR</title>
+		<link>http://www.floatrates.com/usd/pkr/</link>
+		<description>1 U.S. Dollar = 205.21391299 Pakistani Rupee</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>PKR</targetCurrency>
+		<targetName>Pakistani Rupee</targetName>
+		<exchangeRate>205.21391299</exchangeRate>
+		<inverseRate>0.00487296</inverseRate>
+		<inverseDescription>1 Pakistani Rupee = 0.00487296 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.92006986 BGN</title>
+		<link>http://www.floatrates.com/usd/bgn/</link>
+		<description>1 U.S. Dollar = 1.92006986 Bulgarian Lev</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BGN</targetCurrency>
+		<targetName>Bulgarian Lev</targetName>
+		<exchangeRate>1.92006986</exchangeRate>
+		<inverseRate>0.52081438</inverseRate>
+		<inverseDescription>1 Bulgarian Lev = 0.52081438 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 415.34177508 NGN</title>
+		<link>http://www.floatrates.com/usd/ngn/</link>
+		<description>1 U.S. Dollar = 415.34177508 Nigerian Naira</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>NGN</targetCurrency>
+		<targetName>Nigerian Naira</targetName>
+		<exchangeRate>415.34177508</exchangeRate>
+		<inverseRate>0.00240766</inverseRate>
+		<inverseDescription>1 Nigerian Naira = 0.00240766 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 10,867.65075469 UZS</title>
+		<link>http://www.floatrates.com/usd/uzs/</link>
+		<description>1 U.S. Dollar = 10,867.65075469 Uzbekistan Sum</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>UZS</targetCurrency>
+		<targetName>Uzbekistan Sum</targetName>
+		<exchangeRate>10,867.65075469</exchangeRate>
+		<inverseRate>0.00009202</inverseRate>
+		<inverseDescription>1 Uzbekistan Sum = 0.00009202 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 52.22767857 ETB</title>
+		<link>http://www.floatrates.com/usd/etb/</link>
+		<description>1 U.S. Dollar = 52.22767857 Ethiopian birr</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>ETB</targetCurrency>
+		<targetName>Ethiopian birr</targetName>
+		<exchangeRate>52.22767857</exchangeRate>
+		<inverseRate>0.01914694</inverseRate>
+		<inverseDescription>1 Ethiopian birr = 0.01914694 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 6.79384437 TTD</title>
+		<link>http://www.floatrates.com/usd/ttd/</link>
+		<description>1 U.S. Dollar = 6.79384437 Trinidad Tobago Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>TTD</targetCurrency>
+		<targetName>Trinidad Tobago Dollar</targetName>
+		<exchangeRate>6.79384437</exchangeRate>
+		<inverseRate>0.14719207</inverseRate>
+		<inverseDescription>1 Trinidad Tobago Dollar = 0.14719207 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 15,046.94533762 LAK</title>
+		<link>http://www.floatrates.com/usd/lak/</link>
+		<description>1 U.S. Dollar = 15,046.94533762 Lao kip</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>LAK</targetCurrency>
+		<targetName>Lao kip</targetName>
+		<exchangeRate>15,046.94533762</exchangeRate>
+		<inverseRate>0.00006646</inverseRate>
+		<inverseDescription>1 Lao kip = 0.00006646 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 7.76310551 GTQ</title>
+		<link>http://www.floatrates.com/usd/gtq/</link>
+		<description>1 U.S. Dollar = 7.76310551 Guatemalan Quetzal</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GTQ</targetCurrency>
+		<targetName>Guatemalan Quetzal</targetName>
+		<exchangeRate>7.76310551</exchangeRate>
+		<inverseRate>0.12881443</inverseRate>
+		<inverseDescription>1 Guatemalan Quetzal = 0.12881443 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 3.75345145 SAR</title>
+		<link>http://www.floatrates.com/usd/sar/</link>
+		<description>1 U.S. Dollar = 3.75345145 Saudi Riyal</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>SAR</targetCurrency>
+		<targetName>Saudi Riyal</targetName>
+		<exchangeRate>3.75345145</exchangeRate>
+		<inverseRate>0.26642146</inverseRate>
+		<inverseDescription>1 Saudi Riyal = 0.26642146 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 4.68690954 PLN</title>
+		<link>http://www.floatrates.com/usd/pln/</link>
+		<description>1 U.S. Dollar = 4.68690954 Polish Zloty</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>PLN</targetCurrency>
+		<targetName>Polish Zloty</targetName>
+		<exchangeRate>4.68690954</exchangeRate>
+		<inverseRate>0.21336021</inverseRate>
+		<inverseDescription>1 Polish Zloty = 0.21336021 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 2.80615051 BYN</title>
+		<link>http://www.floatrates.com/usd/byn/</link>
+		<description>1 U.S. Dollar = 2.80615051 Belarussian Ruble</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BYN</targetCurrency>
+		<targetName>Belarussian Ruble</targetName>
+		<exchangeRate>2.80615051</exchangeRate>
+		<inverseRate>0.35636007</inverseRate>
+		<inverseDescription>1 Belarussian Ruble = 0.35636007 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 10.54705449 TJS</title>
+		<link>http://www.floatrates.com/usd/tjs/</link>
+		<description>1 U.S. Dollar = 10.54705449 Tajikistan Ruble</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>TJS</targetCurrency>
+		<targetName>Tajikistan Ruble</targetName>
+		<exchangeRate>10.54705449</exchangeRate>
+		<inverseRate>0.09481320</inverseRate>
+		<inverseDescription>1 Tajikistan Ruble = 0.09481320 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 54.35075494 GMD</title>
+		<link>http://www.floatrates.com/usd/gmd/</link>
+		<description>1 U.S. Dollar = 54.35075494 Gambian dalasi</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>GMD</targetCurrency>
+		<targetName>Gambian dalasi</targetName>
+		<exchangeRate>54.35075494</exchangeRate>
+		<inverseRate>0.01839901</inverseRate>
+		<inverseDescription>1 Gambian dalasi = 0.01839901 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 108.07390300 CVE</title>
+		<link>http://www.floatrates.com/usd/cve/</link>
+		<description>1 U.S. Dollar = 108.07390300 Cape Verde escudo</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CVE</targetCurrency>
+		<targetName>Cape Verde escudo</targetName>
+		<exchangeRate>108.07390300</exchangeRate>
+		<inverseRate>0.00925293</inverseRate>
+		<inverseDescription>1 Cape Verde escudo = 0.00925293 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 425.41818182 AOA</title>
+		<link>http://www.floatrates.com/usd/aoa/</link>
+		<description>1 U.S. Dollar = 425.41818182 Angolan kwanza</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>AOA</targetCurrency>
+		<targetName>Angolan kwanza</targetName>
+		<exchangeRate>425.41818182</exchangeRate>
+		<inverseRate>0.00235063</inverseRate>
+		<inverseDescription>1 Angolan kwanza = 0.00235063 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 15.47998677 MVR</title>
+		<link>http://www.floatrates.com/usd/mvr/</link>
+		<description>1 U.S. Dollar = 15.47998677 Maldivian rufiyaa</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>MVR</targetCurrency>
+		<targetName>Maldivian rufiyaa</targetName>
+		<exchangeRate>15.47998677</exchangeRate>
+		<inverseRate>0.06459954</inverseRate>
+		<inverseDescription>1 Maldivian rufiyaa = 0.06459954 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 0.37686391 BHD</title>
+		<link>http://www.floatrates.com/usd/bhd/</link>
+		<description>1 U.S. Dollar = 0.37686391 Bahrain Dinar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BHD</targetCurrency>
+		<targetName>Bahrain Dinar</targetName>
+		<exchangeRate>0.37686391</exchangeRate>
+		<inverseRate>2.65347777</inverseRate>
+		<inverseDescription>1 Bahrain Dinar = 2.65347777 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 18.87788094 EGP</title>
+		<link>http://www.floatrates.com/usd/egp/</link>
+		<description>1 U.S. Dollar = 18.87788094 Egyptian Pound</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>EGP</targetCurrency>
+		<targetName>Egyptian Pound</targetName>
+		<exchangeRate>18.87788094</exchangeRate>
+		<inverseRate>0.05297205</inverseRate>
+		<inverseDescription>1 Egyptian Pound = 0.05297205 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 7.38389974 HRK</title>
+		<link>http://www.floatrates.com/usd/hrk/</link>
+		<description>1 U.S. Dollar = 7.38389974 Croatian Kuna</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>HRK</targetCurrency>
+		<targetName>Croatian Kuna</targetName>
+		<exchangeRate>7.38389974</exchangeRate>
+		<inverseRate>0.13542979</inverseRate>
+		<inverseDescription>1 Croatian Kuna = 0.13542979 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 4.83260722 LYD</title>
+		<link>http://www.floatrates.com/usd/lyd/</link>
+		<description>1 U.S. Dollar = 4.83260722 Libyan Dinar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>LYD</targetCurrency>
+		<targetName>Libyan Dinar</targetName>
+		<exchangeRate>4.83260722</exchangeRate>
+		<inverseRate>0.20692764</inverseRate>
+		<inverseDescription>1 Libyan Dinar = 0.20692764 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 959.05388048 CLP</title>
+		<link>http://www.floatrates.com/usd/clp/</link>
+		<description>1 U.S. Dollar = 959.05388048 Chilean Peso</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>CLP</targetCurrency>
+		<targetName>Chilean Peso</targetName>
+		<exchangeRate>959.05388048</exchangeRate>
+		<inverseRate>0.00104269</inverseRate>
+		<inverseDescription>1 Chilean Peso = 0.00104269 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 1.00000000 BSD</title>
+		<link>http://www.floatrates.com/usd/bsd/</link>
+		<description>1 U.S. Dollar = 1.00000000 Bahamian Dollar</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>BSD</targetCurrency>
+		<targetName>Bahamian Dollar</targetName>
+		<exchangeRate>1.00000000</exchangeRate>
+		<inverseRate>1.00000000</inverseRate>
+		<inverseDescription>1 Bahamian Dollar = 1.00000000 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 116.36454059 XPF</title>
+		<link>http://www.floatrates.com/usd/xpf/</link>
+		<description>1 U.S. Dollar = 116.36454059 CFP Franc</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>XPF</targetCurrency>
+		<targetName>CFP Franc</targetName>
+		<exchangeRate>116.36454059</exchangeRate>
+		<inverseRate>0.00859368</inverseRate>
+		<inverseDescription>1 CFP Franc = 0.00859368 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 24.61651762 HNL</title>
+		<link>http://www.floatrates.com/usd/hnl/</link>
+		<description>1 U.S. Dollar = 24.61651762 Honduran Lempira</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>HNL</targetCurrency>
+		<targetName>Honduran Lempira</targetName>
+		<exchangeRate>24.61651762</exchangeRate>
+		<inverseRate>0.04062313</inverseRate>
+		<inverseDescription>1 Honduran Lempira = 0.04062313 U.S. Dollar</inverseDescription>
+	</item>
+	<item>
+		<title>1 USD = 118.16276545 KES</title>
+		<link>http://www.floatrates.com/usd/kes/</link>
+		<description>1 U.S. Dollar = 118.16276545 Kenyan shilling</description>
+		<pubDate>Wed, 6 Jul 2022 23:55:01 GMT</pubDate>
+		<baseCurrency>USD</baseCurrency>
+		<baseName>U.S. Dollar</baseName>
+		<targetCurrency>KES</targetCurrency>
+		<targetName>Kenyan shilling</targetName>
+		<exchangeRate>118.16276545</exchangeRate>
+		<inverseRate>0.00846290</inverseRate>
+		<inverseDescription>1 Kenyan shilling = 0.00846290 U.S. Dollar</inverseDescription>
+	</item>
+</channel>

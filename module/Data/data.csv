@@ -1,0 +1,12 @@
+Units,Values
+bit,0.125
+nibble,0.5
+byte,1
+kilobyte,(2**10)
+megabyte,(2**20)
+gigabyte,(2**30)
+terabyte,(2**40)
+petabyte,(2**50)
+exabyte,(2**60)
+zettabyte,(2**70)
+yottabyte,(2**80)

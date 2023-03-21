@@ -1,0 +1,9 @@
+Units,Values
+Horsepower,746
+watt,1
+Kilowatts,(10**3)
+Megawatts,(10**6)
+Gigawatts,(10**9)
+decibel-milliwatts,1
+British Thermal Unit,1
+Calories per Second,1

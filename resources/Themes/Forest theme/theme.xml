@@ -1,0 +1,13 @@
+<xml>
+<theme>
+	<name>Forest theme</name>
+	<displaybg>#72AF2F</displaybg>
+	<displayfg>yellow</displayfg>
+	<displayfbg>#72AF2F</displayfbg>
+	<displayffg>#FFFF99</displayffg>
+	<buttonactivebg>#4A6B4B</buttonactivebg>
+	<HOBbg>#E9DB2B</HOBbg>
+	<HOBfg>#72AF2F</HOBfg>
+	<HeadButtonActiveBg>#EFAF29</HeadButtonActiveBg>
+</theme>
+</xml>

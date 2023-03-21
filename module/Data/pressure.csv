@@ -1,0 +1,15 @@
+Units,Values
+Bar,(10**(-5))
+Pound/square inch,14.50326 *(10**(-5))
+Kilopascal,(10**(-3))
+Megapascal,(10**(-6))
+Kilogram force/centimeter square,1.01968*(10**(-5))
+Millimeter of mercury,750.0188*(10**(-5))
+torr,750.0188*(10**(-5))
+Atmospheres,0.987167*(10**(-5))
+Meter of Water,0.000102
+Foot of water,0.000335
+Centimeter of mercury,0.00075
+Inches of mercury,0.000295
+Inches of water,0.004014
+Pascal,1

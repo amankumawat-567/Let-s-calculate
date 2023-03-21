@@ -1,0 +1,13 @@
+<xml>
+<theme>
+	<name>Vector theme</name>
+	<displaybg>#111111</displaybg>
+	<displayfg>white</displayfg>
+	<displayfbg>#111111</displayfbg>
+	<displayffg>gray64</displayffg>
+	<buttonactivebg>#111111</buttonactivebg>
+	<HOBbg>#03E4D9</HOBbg>
+	<HOBfg>white</HOBfg>
+	<HeadButtonActiveBg>#1BD9C9</HeadButtonActiveBg>
+</theme>
+</xml>

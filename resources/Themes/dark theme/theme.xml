@@ -1,0 +1,13 @@
+<xml>
+<theme>
+	<name>dark theme</name>
+	<displaybg>#0D1528</displaybg>
+	<displayfg>white</displayfg>
+	<displayfbg>#0D1528</displayfbg>
+	<displayffg>gray64</displayffg>
+	<buttonactivebg>gray10</buttonactivebg>
+	<HOBbg>#03E4D9</HOBbg>
+	<HOBfg>white</HOBfg>
+	<HeadButtonActiveBg>#0D1528</HeadButtonActiveBg>
+</theme>
+</xml>
