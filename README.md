@@ -82,7 +82,8 @@ To run this project, you need to have the following Python packages installed:
 * mysql-connector-python
 * requests
 * imageio
-You can install these packages by running pip install -r requirements.txt in the command line after cloning or downloading the project.
+
+You can install these packages by running `pip install -r requirements.txt` in the command line after cloning or downloading the project.
 
 Please note that you will also need to have MySQL installed on your system.
 
