@@ -1,5 +1,5 @@
 # Let's Calculate
-![logo](https://github.com/amankumawat-567/Let-s-calculate/blob/main/banner.png)
+![logo](https://github.com/amankumawat-567/Let-s-calculate/blob/master/banner.png)
 
 ## Let's Calculate - A Calculator Application
 Let's Calculate is a calculator application created using Python and featuring a backend database for storing user history and conversation parameters. The application includes three modes: Standard, Scientific, and Programming.
