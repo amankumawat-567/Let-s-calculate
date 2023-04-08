@@ -1,0 +1,5 @@
+pillow
+matplotlib
+mysql-connector-python
+requests
+imageio
