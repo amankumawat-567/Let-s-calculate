@@ -1,5 +1,5 @@
 # Let's Calculate
-![logo](https://github.com/amankumawat-567/Let-s-calculate/blob/master/banner.png)
+![logo](banner.png)
 
 ## Let's Calculate - A Calculator Application
 Let's Calculate is a calculator application created using Python and featuring a backend database for storing user history and conversation parameters. The application includes three modes: Standard, Scientific, and Programming.
@@ -89,3 +89,6 @@ Please note that you will also need to have MySQL installed on your system.
 
 ## Credits
 This project was created as a 12 CBSE Informatics Practices Project by [ME](https://github.com/amankumawat-567). It uses several Python modules including Tkinter, Tkinter.ttk, math, mysql-connector, matplotlib.pyplot, pillow, pathlib, os, requests, and imageio.
+
+## License
+This project is currently licensed under [Apache](LICENSE.txt).
