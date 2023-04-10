@@ -3,3 +3,4 @@ matplotlib
 mysql-connector-python
 requests
 imageio
+pandas
