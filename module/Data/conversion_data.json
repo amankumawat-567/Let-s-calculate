@@ -1,0 +1,112 @@
+{
+    "area": {
+        "Meter square": 1.0,
+        "Millimeter square": 1000000.0,
+        "Centimeter square": 10000.0,
+        "Inch square": 1550.003,
+        "Foot square": 10.76391,
+        "Yard square": 1.19599
+    },
+    "data": {
+        "byte": 1.0,
+        "bit": 0.125,
+        "nibble": 0.5,
+        "kilobyte": 1024.0,
+        "megabyte": 1048576.0,
+        "gigabyte": 1073741824.0,
+        "terabyte": 1099511627776.0,
+        "petabyte": 1125899906842624.0,
+        "exabyte": 1.152921504606847e+18,
+        "zettabyte": 1.1805916207174113e+21,
+        "yottabyte": 1.2089258196146292e+24
+    },
+    "energy": {
+        "joule": 1.0,
+        "kilojoule": 0.001,
+        "kiloerg": 10000.0,
+        "erg": 10000000.0,
+        "watt-hour": 0.0002777777777777778,
+        "killowatt-hour": 2.7777777777777776e-07,
+        "electronvolt": 6.24150934e+18,
+        "kilocalorie": 0.000239,
+        "calorie": 0.239
+    },
+    "length": {
+        "Meters": 1.0,
+        "Millimeters": 1000.0,
+        "Centimeters": 100.0,
+        "Kilometers": 0.001,
+        "Inches": 39.37008,
+        "Feet": 3.28084,
+        "Yards": 1.093613,
+        "Miles": 0.000621
+    },
+    "mass": {
+        "Kilogram": 1.0,
+        "Gigatonne": 1000000000000.0,
+        "Megatonne": 1000000000.0,
+        "Tonne": 1000.0,
+        "Gram": 0.001,
+        "Milligram": 1e-06,
+        "Microgram": 1e-09,
+        "Nanogram": 1e-12,
+        "Picogram": 1e-15,
+        "US ton": 907.0,
+        "UK ton": 1016.0,
+        "Pound": 0.45359,
+        "Ounce": 0.02835
+    },
+    "power": {
+        "watt": 1.0,
+        "Horsepower": 746.0,
+        "Kilowatts": 1000.0,
+        "Megawatts": 1000000.0,
+        "Gigawatts": 1000000000.0,
+        "decibel-milliwatts": 1.0,
+        "British Thermal Unit": 1.0,
+        "Calories per Second": 1.0
+    },
+    "pressure": {
+        "Pascal": 1.0,
+        "Bar": 1e-05,
+        "Pound/square inch": 0.0001450326,
+        "Kilopascal": 0.001,
+        "Megapascal": 1e-06,
+        "Kilogram force/centimeter square": 1.01968e-05,
+        "Millimeter of mercury": 0.007500188000000001,
+        "torr": 0.007500188000000001,
+        "Atmospheres": 9.87167e-06,
+        "Meter of Water": 0.000102,
+        "Foot of water": 0.000335,
+        "Centimeter of mercury": 0.00075,
+        "Inches of mercury": 0.000295,
+        "Inches of water": 0.004014
+    },
+    "speed": {
+        "Meter/second": 1.0,
+        "Meter/minute": 59.988,
+        "Kilometer/hour": 3.599712,
+        "Foot/second": 3.28084,
+        "Foot/minute": 196.8504,
+        "Miles/hour": 2.237136
+    },
+    "time": {
+        "second": 1.0,
+        "microsecond": 1e-06,
+        "minute": 60.0,
+        "hour": 3600.0,
+        "day": 86400.0,
+        "year": 31536000.0,
+        "century": 31536000000.0
+    },
+    "volume": {
+        "Meter cube": 1.0,
+        "Centimeter cube": 1000000.0,
+        "Liter": 1000.0,
+        "cube Inch": 61024.0,
+        "cube Foot": 35.0,
+        "gallons US": 264.0,
+        "Imperial gallons": 220.0,
+        "US barrel (oil)": 6.29
+    }
+}

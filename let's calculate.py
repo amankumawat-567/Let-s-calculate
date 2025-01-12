@@ -4,13 +4,12 @@ from tkinter import *
 from tkinter import messagebox
 import math
 import tkinter.ttk as ttk
-import mysql.connector
-import matplotlib.pyplot as py
 import pandas as pd
 #created ------------------------------------------------------------------------------------------------------------------
 from module.functions import *
-from module.Currency_data_download import*
-from module.Xml_and_Csv_to_Mysql_convertor import *
+from module.CurrencyData import CurrencyDataUpdater, CurrencyConvertor
+from module.HistoryManager import HistoryManager
+from module.UnitConvertor import UnitConvertor
 from module.theme_data import *
 #--------------------------------------------------------------------------------------------------------------------------
 #theme data----------------------------------------------------------------------------------------------------------------
@@ -544,43 +543,56 @@ def standard_calculater():
     history_but.place(x=280,y=0,width=60,height=40)
     #History window-------------------------------------------------------------
     def history():
-        sd_canvas = Canvas(standard_frame,bg="#0d1528",bd=0,highlightthickness=0)
+
+        # Create the main frame for displaying history
+        sd_canvas = Canvas(standard_frame, bg="#0d1528", bd=0, highlightthickness=0)
         sd_style = ttk.Style(standard_frame)
         sd_style.theme_use('clam')
-        sd_style.configure("Vertical.TScrollbar", gripcount=0,background="#00b0f0",darkcolor="#0d1528",lightcolor="#0d1528",troughcolor="#0d1528",bordercolor="#0d1528",arrowcolor="#0d1528")
-        sd_scroll_y = ttk.Scrollbar(standard_frame,orient="vertical", command=sd_canvas.yview)
+        sd_style.configure("Vertical.TScrollbar", gripcount=0, background="#00b0f0", darkcolor="#0d1528", lightcolor="#0d1528", troughcolor="#0d1528", bordercolor="#0d1528", arrowcolor="#0d1528")
 
-        sd_frame = Frame(sd_canvas,bg="#0d1528",bd=0)
-        mycursor.execute("SELECT * FROM standard_history")
-        myresult = mycursor.fetchall()
-        q = []
-        s = []
-        for x in myresult:
-            alpha = x[1]
-            for i,j in zip(fxn_list,replacement_list):
-                alp = alpha.replace(j,i)
-            Button(sd_frame,bg="#0d1528",fg="white",font=('Bookman Old Style',10),width=43,bd=0,text=alp,activebackground="#0d1528",command = lambda a=alp : display.set(display.get() + a)).pack()
-            Button(sd_frame,bg="#0d1528",fg="cyan",font=('Bookman Old Style',20),width=20,bd=0,text=x[2],activebackground="#0d1528",command = lambda a=x[2] : display.set(display.get() + a)).pack()
+        sd_scroll_y = ttk.Scrollbar(standard_frame, orient="vertical", command=sd_canvas.yview)
+
+        sd_frame = Frame(sd_canvas, bg="#0d1528", bd=0)
+
+        # Get all history from the HistoryManager
+        history_entries = history_manager.get_all()
+
+        for entry in history_entries:
+            question = entry['Ques']
+            answer = entry['Ans']
+
+            # Replace any placeholders or formatting
+            for i, j in zip(fxn_list, replacement_list):
+                question = question.replace(j, i)
+
+            # Display the question button
+            Button(sd_frame, bg="#0d1528", fg="white", font=('Bookman Old Style', 10), width=43, bd=0, text=question, activebackground="#0d1528", command=lambda q=question: display.set(display.get() + q)).pack()
+
+            # Display the answer button
+            Button(sd_frame, bg="#0d1528", fg="cyan", font=('Bookman Old Style', 20), width=20, bd=0, text=str(answer), activebackground="#0d1528", command=lambda ans=str(answer): display.set(display.get() + ans)).pack()
 
         sd_canvas.create_window(0, 0, anchor='nw', window=sd_frame)
-
         sd_canvas.update_idletasks()
 
-        sd_canvas.configure(scrollregion=sd_canvas.bbox('all'),yscrollcommand=sd_scroll_y.set)
+        sd_canvas.configure(scrollregion=sd_canvas.bbox('all'), yscrollcommand=sd_scroll_y.set)
 
         def clear_his():
-            mycursor.execute("DELETE FROM standard_history ")
-            mydb.commit()
+            # Clear the history from the JSON file
+            history_manager.delete_all()
+
+            # Clear the history from the UI
             List = sd_frame.pack_slaves()
             for I in List:
                 I.destroy()
 
-        clear_hist_but = Button(standard_frame,bg="#0D1528",activebackground="#0D1528",bd=0,image=clear_hist,command=clear_his)
-        clear_hist_but.place(x=340,y=465,height=45,width=360)
-                             
-        sd_canvas.place(x=340,y=0,height=465,width=360)
-        sd_scroll_y.place(x=682,y=0,height=465)
-        sd_scroll_y.set(0.2,0.3)
+        clear_hist_but = Button(standard_frame, bg="#0D1528", activebackground="#0D1528", bd=0, image=clear_hist, command=clear_his)
+        clear_hist_but.place(x=340, y=465, height=45, width=360)
+
+        sd_canvas.place(x=340, y=0, height=465, width=360)
+        sd_scroll_y.place(x=682, y=0, height=465)
+        sd_scroll_y.set(0.2, 0.3)
+
+    # Example usage:
     history()
     #---------------------------------------------------------------------------
 
@@ -590,15 +602,21 @@ def standard_calculater():
 
     def equal():
         if displayf.get() != "":
-            equal_fxn(standard_frame,display,fxn_list,replacement_list,displayf)
+            # Perform the calculation
+            equal_fxn(standard_frame, display, fxn_list, replacement_list, displayf)
+
+            # Get the current question and answer
             ques = displayf.get()
-            for i,j in zip(fxn_list,replacement_list):
-                ques_ = ques.replace(i,j)
+            for i, j in zip(fxn_list, replacement_list):
+                ques_ = ques.replace(i, j)
+            
             sol_ = display.get()
-            val = (ques_,sol_)
-            mycursor.execute(sdi, val)
-            mydb.commit()
-            history()        
+            
+            # Save the result to the HistoryManager
+            history_manager.add(ques_, float(sol_))  # Add question and answer to history
+            
+            # Update the history display
+            history()       
 
     def clear():
         claer_fxn(standard_frame,display,displayf)
@@ -744,44 +762,58 @@ def Scientific_Calculater():
     history_but.place(x=535,y=0)
     #History window-------------------------------------------------------------
     def history():
-        sc_canvas = Canvas(scientific_frame,bg="#0D1528",bd=0,highlightthickness=0)
+
+        # Create the main frame for displaying history
+        sc_canvas = Canvas(scientific_frame, bg="#0D1528", bd=0, highlightthickness=0)
         sc_style = ttk.Style(scientific_frame)
         sc_style.theme_use('clam')
-        sc_style.configure("Vertical.TScrollbar", gripcount=0,background="#00b0f0",darkcolor="#0d1528",lightcolor="#0d1528",troughcolor="#0d1528",bordercolor="#0d1528",arrowcolor="#0d1528")
-        sc_scroll_y = ttk.Scrollbar(scientific_frame,orient="vertical", command=sc_canvas.yview)
+        sc_style.configure("Vertical.TScrollbar", gripcount=0, background="#00b0f0", darkcolor="#0d1528", lightcolor="#0d1528", troughcolor="#0d1528", bordercolor="#0d1528", arrowcolor="#0d1528")
 
-        sc_frame = Frame(sc_canvas,bg="#0D1528",bd=0)
+        sc_scroll_y = ttk.Scrollbar(scientific_frame, orient="vertical", command=sc_canvas.yview)
 
-        mycursor.execute("SELECT * FROM scientific_history")
-        myresult = mycursor.fetchall()
-        for x in myresult:
-            alpha = x[1]
-            for i,j in zip(fxn_list,replacement_list):
-                alpha = alpha.replace(j,i)
-            alp = alpha
-            Button(sc_frame,bg="#0D1528",fg="white",font=('Bookman Old Style',10),width=43,bd=0,text=alp,activebackground="#0D1528",command = lambda a=alp : display.set(display.get() + a)).pack()
-            Button(sc_frame,bg="#0D1528",fg="cyan",font=('Bookman Old Style',20),width=20,bd=0,text=x[2],activebackground="#0D1528",command = lambda a=x[2] : display.set(display.get() + a)).pack()
+        sc_frame = Frame(sc_canvas, bg="#0D1528", bd=0)
+
+        # Get all history from the HistoryManager
+        history_entries = history_manager.get_all()
+
+        for entry in history_entries:
+            question = entry['Ques']
+            answer = entry['Ans']
+
+            # Replace any placeholders or formatting
+            for i, j in zip(fxn_list, replacement_list):
+                question = question.replace(j, i)
+
+            # Display the question button
+            Button(sc_frame, bg="#0D1528", fg="white", font=('Bookman Old Style', 10), width=43, bd=0, text=question, activebackground="#0D1528", command=lambda q=question: display.set(display.get() + q)).pack()
+
+            # Display the answer button
+            Button(sc_frame, bg="#0D1528", fg="cyan", font=('Bookman Old Style', 20), width=20, bd=0, text=str(answer), activebackground="#0D1528", command=lambda ans=str(answer): display.set(display.get() + ans)).pack()
 
         sc_canvas.create_window(0, 0, anchor='nw', window=sc_frame)
-
         sc_canvas.update_idletasks()
 
-        sc_canvas.configure(scrollregion=sc_canvas.bbox('all'),yscrollcommand=sc_scroll_y.set)
+        sc_canvas.configure(scrollregion=sc_canvas.bbox('all'), yscrollcommand=sc_scroll_y.set)
+
         def clear_his():
-            mycursor.execute("DELETE FROM scientific_history ")
-            mydb.commit()
+            # Clear the history from the JSON file
+            history_manager.delete_all()
+
+            # Clear the history from the UI
             List = sc_frame.pack_slaves()
             for I in List:
                 I.destroy()
 
-        clear_hist_but = Button(scientific_frame,bg="#0D1528",activebackground="#0D1528",bd=0,image=clear_hist,command=clear_his)
-        clear_hist_but.place(x=595,y=465,height=45,width=360)
-                             
-        sc_canvas.place(x=595,y=0,height=465,width=345)
-        sc_scroll_y.place(x=939,y=0,height=465)
-        sc_scroll_y.set(0.2,0.3)
+        clear_hist_but = Button(scientific_frame, bg="#0D1528", activebackground="#0D1528", bd=0, image=clear_hist, command=clear_his)
+        clear_hist_but.place(x=595, y=465, height=45, width=360)
 
+        sc_canvas.place(x=595, y=0, height=465, width=345)
+        sc_scroll_y.place(x=939, y=0, height=465)
+        sc_scroll_y.set(0.2, 0.3)
+
+    # Example usage:
     history()
+
     #---------------------------------------------------------------------------
         
     #----------------------------------------------------------------------
@@ -792,30 +824,42 @@ def Scientific_Calculater():
         bracket_fxn(scientific_frame,display)
 
     def equal():
-        icale = display.get()
-        icalf = displayf.get()
-        ical = icalf + icale
-        displayf.set(ical)
+        icale = display.get()  # Get the expression from the display
+        icalf = displayf.get()  # Get the current input from the additional display field
+        ical = icalf + icale  # Concatenate the two inputs into one expression
+        displayf.set(ical)  # Update the display field with the concatenated expression
+
         if ical == "":
-                None
+            # If the expression is empty, do nothing
+            return
         else:
-                for a,b in zip(fxn_list,replacement_list):
-                        ical = ical.replace(a,b)
-                       
-                try:
-                    result = eval(ical)
-                except:
-                    result = "Error"
-                display.set(result)
-        ques = displayf.get()
-        for i,j in zip(fxn_list,replacement_list):
-            ques = ques.replace(i,j)
+            # Replace placeholders or functions in the expression
+            for a, b in zip(fxn_list, replacement_list):
+                ical = ical.replace(a, b)
+
+            try:
+                # Try to evaluate the expression
+                result = eval(ical)
+            except:
+                # If an error occurs, set the result as "Error"
+                result = "Error"
+
+            # Update the main display with the result
+            display.set(result)
+
+        # Save the current expression and result to history
+        ques = displayf.get()  # Get the final expression
+        for i, j in zip(fxn_list, replacement_list):
+            ques = ques.replace(i, j)  # Replace any placeholders or functions in the expression
         ques_ = ques
-        sol_ = display.get()
-        val = (ques_,sol_)
-        mycursor.execute(sci, val)
-        mydb.commit()
+        sol_ = display.get()  # Get the solution (result)
+
+        # Save the expression and result to the history using HistoryManager
+        history_manager.add(ques_, float(sol_) if isinstance(sol_, (int, float)) else sol_)
+
+        # Update the history display
         history()
+
 
     def clear():
         claer_fxn(scientific_frame,display,displayf)
@@ -1490,85 +1534,20 @@ def convertor_currency():
     backlabel.place(height=555,width=340)
     cstyle = ttk.Style()
     cstyle.theme_use('vista') 
-    mycursor_cur.execute("SELECT Target FROM data")
-    myresult = mycursor_cur.fetchall()
-    l1=[]
-    for x in myresult:
-        l1.append(x[0])
+    currencies = Currency_convertor.get_all_currencies()
 
     def upgrade_data():
         try:
-            download_update()
-            modulating()
-            upgrade_currencydata()
+            Currency_data_updater.run()
+            Currency_convertor.Refresh()
             messagebox.showinfo("Info", "Database Updated Successfuly")
         except:
             messagebox.showwarning("Error", "Can't Connect to Internet, Please! try again")
-
-    def ploting(x,y):
-        py.bar(x,y)
-        py.xlabel("Currency")
-        py.ylabel("Exchange Rate")
-        py.title("Daily Foreign Exchange Rates for U.S. Dollar (USD)")
-        py.show()
-
-    def data_graph():
-        choise = Toplevel()
-        choise.maxsize(340,550)
-        choise.minsize(340,550)
-        view = Label(choise,image=graph_start)
-        view.place(height=550,width=340)
-        def end():
-            view.config(image=graph_page)   
-            char1 = StringVar()
-            char2 = StringVar()
-            char3 = StringVar()
-            char4 = StringVar()
-            char5 = StringVar()
-            char1.set("--Select--")
-            char2.set("--Select--")
-            char3.set("--Select--")
-            char4.set("--Select--")
-            char5.set("--Select--")
-            char1box = ttk.Combobox(choise,width=15,textvariable=char1)
-            char2box = ttk.Combobox(choise,width=15,textvariable=char2)
-            char3box = ttk.Combobox(choise,width=15,textvariable=char3)
-            char4box = ttk.Combobox(choise,width=15,textvariable=char4)
-            char5box = ttk.Combobox(choise,width=15,textvariable=char5)
-            char1box['values']=l1
-            char2box['values']=l1
-            char3box['values']=l1
-            char4box['values']=l1
-            char5box['values']=l1
-            char1box.place(x=20,y=120)
-            char2box.place(x=20,y=213)
-            char3box.place(x=20,y=310)
-            char4box.place(x=20,y=393)
-            char5box.place(x=20,y=485)
-            def start_plot():
-                if char1.get() != "--Select--" and char2.get() != "--Select--" and char3.get() != "--Select--" and char4.get() != "--Select--" and char5.get() != "--Select--" :
-                    x = [char1.get(),char2.get(),char3.get(),char4.get(),char5.get()]
-                    y=[]
-                    for i in x:
-                        mycursor_cur.execute("SELECT InverseRate FROM data WHERE Target = '" + i + "'")
-                        myresult = mycursor_cur.fetchall()
-                        apx = myresult[0]
-                        apx = apx[0]
-                        apx = eval(apx)
-                        y.append(apx)
-                    choise.destroy()
-                    ploting(x,y)
-                else:
-                    messagebox.showinfo("Note", "All 5 Are Mandatery")
-
-            ploting_but = Button(choise,image=plot_but_image,command=start_plot,bd=0,activebackground="#2DC2BC")
-            ploting_but.place(x=268,y=479,width=72,height=71)
-        choise.after(1000,end)
         
     display1 = StringVar()
     display2 = StringVar()
-    combo1.set("U.S. Dollar")
-    combo2.set("U.S. Dollar")
+    combo1.set(currencies[0])
+    combo2.set(currencies[0])
     act = StringVar()
     act.set("1")
 
@@ -1578,10 +1557,8 @@ def convertor_currency():
     combobox2 = ttk.Combobox(currency_frame,width=15,textvariable=combo2)
     upgrade_button = Button(currency_frame,image=upg_image,command=upgrade_data,bd=0,activebackground=thm[1])
     upgrade_button.place(x=22,y=232,height=26,width=156)
-    graph_button = Button(currency_frame,image=graph_image,command=data_graph,bd=0,activebackground=thm[1])
-    graph_button.place(x=300,y=231,height=27,width=27)
-    combobox1['values']=l1
-    combobox2['values']=l1
+    combobox1['values']=currencies
+    combobox2['values']=currencies
     combobox1['state'] = "readonly"
     combobox2['state'] = "readonly"
     
@@ -1600,29 +1577,15 @@ def convertor_currency():
                     display2.set(display2.get() + txt)
                     base = combo2.get()
                     tar = combo1.get()
-                    mycursor_cur.execute("SELECT InverseRate FROM data WHERE Target='" + base +"'" )
-                    b = mycursor_cur.fetchall()
-                    mycursor_cur.execute("SELECT ExchangeRate FROM data WHERE Target='" + tar +"'" )
-                    a = mycursor_cur.fetchall()
-                    a = a[0]
-                    a = a[0]
-                    b = b[0]
-                    b = b[0]
-                    display1.set(str(eval("(" + display2.get() + ")*(" + a + ")*(" + b + ")")))
+                    result = Currency_convertor.convert(base,tar,float(display2.get()))
+                    display1.set(str(result))
 
             elif act.get() == "1":
                     display1.set(display1.get() + txt)
                     base = combo1.get()
                     tar = combo2.get()
-                    mycursor_cur.execute("SELECT InverseRate FROM data WHERE Target='" + base +"'" )
-                    b = mycursor_cur.fetchall()
-                    mycursor_cur.execute("SELECT ExchangeRate FROM data WHERE Target='" + tar +"'" )
-                    a = mycursor_cur.fetchall()
-                    a = a[0]
-                    a = a[0]
-                    b = b[0]
-                    b = b[0]
-                    display2.set(str(eval("(" + display1.get() + ")*(" + a + ")*(" + b + ")")))
+                    result = Currency_convertor.convert(base,tar,float(display1.get()))
+                    display2.set(str(result))
         except:
             None
                   
@@ -1740,105 +1703,9 @@ def convertor():
     cstyle.theme_use('vista')
     convertor_typ = opp.get()
     
-    if convertor_typ == "length":
-        mycursor_con.execute("SELECT Unit FROM length")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("Meters")
-        combo2.set("Meters")
-        
-    elif convertor_typ == "volume":
-        mycursor_con.execute("SELECT Unit FROM volume")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("Meter cube")
-        combo2.set("Meter cube")
-        
-    elif convertor_typ == "temp":
-        l1=["Celsius","Kelvin","Fahrenheit"]
-        combo1.set("Kelvin")
-        combo2.set("Kelvin")
-        
-    elif convertor_typ == "weight":
-        mycursor_con.execute("SELECT Unit FROM weight")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("Kilogram")
-        combo2.set("Kilogram")
-        
-    elif convertor_typ == "energy":
-        mycursor_con.execute("SELECT Unit FROM energy")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("joule")
-        combo2.set("joule")
-        
-    elif convertor_typ == "area":
-        mycursor_con.execute("SELECT Unit FROM area")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("Meter square")
-        combo2.set("Meter square")
-        
-    elif convertor_typ == "speed":
-        mycursor_con.execute("SELECT Unit FROM speed")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("Meter/second")
-        combo2.set("Meter/second")
-                   
-    elif convertor_typ == "time":
-        mycursor_con.execute("SELECT Unit FROM time")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("second")
-        combo2.set("second")
-        
-    elif convertor_typ == "data":
-        mycursor_con.execute("SELECT Unit FROM data")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("byte")
-        combo2.set("byte")
-        
-    elif convertor_typ == "power":
-        mycursor_con.execute("SELECT Unit FROM power")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("watt")
-        combo2.set("watt")
-        
-    elif convertor_typ == "pressure":
-        mycursor_con.execute("SELECT Unit FROM pressure")
-        myresult = mycursor_con.fetchall()
-        l1=[]
-        for x in myresult:
-            l1.append(x[0])
-        combo1.set("Pascal")
-        combo2.set("Pascal")
-        
-    elif convertor_typ == "angle":
-        l1=["Degrees","Radians","Gradians"]
-        combo1.set("Radians")
-        combo2.set("Radians")
+    units = Unit_convertor.get_units_by_category(convertor_typ)
+    combo1.set(units[0])
+    combo2.set(units[0])
         
     display1 = StringVar()
     display2 = StringVar()
@@ -1849,8 +1716,8 @@ def convertor():
     display2_view = Entry(convertor_frame,font=("Comic Sans MS",20),textvariable = display2,bg=thm[1],bd=0,fg=thm[2])
     combobox1 = ttk.Combobox(convertor_frame,width=15,textvariable=combo1)
     combobox2 = ttk.Combobox(convertor_frame,width=15,textvariable=combo2)
-    combobox1['values']=l1
-    combobox2['values']=l1
+    combobox1['values']=units
+    combobox2['values']=units
     combobox1['state'] = "readonly"
     combobox2['state'] = "readonly"
     
@@ -1865,134 +1732,22 @@ def convertor():
 
         
     def convert_data(txt):
-        if convertor_typ == "angle":
-            try:
-                if act.get() == "2":
-                        display2.set(display2.get() + txt)
-                        base = combo2.get()
-                        tar = combo1.get()
-                        apx = display2.get()
-                        if base == "Radians" and tar == "Degrees":
-                            x = (eval(apx)*180)/math.pi 
-                        elif base == "Radians" and tar == "Gradians":
-                            x = (eval(apx)*200)/math.pi
-                        elif base == "Degrees" and tar == "Radians":
-                            x = (eval(apx)*math.pi)/180 
-                        elif base == "Degrees" and tar == "Gradians":
-                            x = (eval(apx)*200)/180
-                        elif base == "Gradians" and tar == "Degrees":
-                            x = (eval(apx)*180)/200 
-                        elif base == "Gradians" and tar == "Radians":
-                            x = (eval(apx)*math.pi)/200
-                        else:
-                            x = eval(apx)
-                        display1.set(str(round(x,15)))
+        try:
+            if act.get() == "2":
+                display2.set(display2.get() + txt)
+                base = combo2.get()
+                tar = combo1.get()
+                result = Unit_convertor.convert(convertor_typ,base,tar,float(display2.get()))
+                display1.set(str(result))
 
-                elif act.get() == "1":
-                        display1.set(display1.get() + txt)
-                        base = combo1.get()
-                        tar = combo2.get()
-                        apx = display1.get()
-                        if base == "Radians" and tar == "Degrees":
-                            x = (eval(apx)*180)/math.pi
-                        elif base == "Radians" and tar == "Gradians":
-                            x = (eval(apx)*200)/math.pi
-                        elif base == "Degrees" and tar == "Radians":
-                            x = (eval(apx)*math.pi)/180 
-                        elif base == "Degrees" and tar == "Gradians":
-                            x = (eval(apx)*200)/180
-                        elif base == "Gradians" and tar == "Degrees":
-                            x = (eval(apx)*180)/200 
-                        elif base == "Gradians" and tar == "Radians":
-                            x = (eval(apx)*math.pi)/200
-                        else:
-                            x = eval(apx)
-                        display2.set(str(round(x,15)))
-            except:
-                None
-
-        elif convertor_typ == "temp":
-            try:
-                if act.get() == "2":
-                        display2.set(display2.get() + txt)
-                        base = combo2.get()
-                        tar = combo1.get()
-                        apx = display2.get()
-                        if base == "Celsius" and tar == "Kelvin" :
-                            x = apx + "+ 273"
-                        elif base == "Celsius" and tar == "Fahrenheit" :
-                            x = "((9/5)*(" + apx + ")) + 32"
-                        elif base == "Kelvin" and tar == "Celsius" :
-                            x = apx + "- 273"
-                        elif base == "Kelvin" and tar == "Fahrenheit" :
-                            x = "((9/5)*(" + apx + "- 273)) + 32"
-                        elif base == "Fahrenheit" and tar == "Celsius" :
-                            x = "(5/9)*(" + apx + " - 32)"
-                        elif base == "Fahrenheit" and tar == "Kelvin" :
-                            x = "((5/9)*(" + apx + " - 32)) + 273"
-                        else:
-                            x = apx
-                        display1.set(str(eval(x)))
-
-
-                elif act.get() == "1":
-                        display1.set(display1.get() + txt)
-                        base = combo1.get()
-                        tar = combo2.get()
-                        apx = display1.get()
-                        if base == "Celsius" and tar == "Kelvin" :
-                            x = apx + "+ 273"
-                        elif base == "Celsius" and tar == "Fahrenheit" :
-                            x = "((9/5)*(" + apx + ")) + 32"
-                        elif base == "Kelvin" and tar == "Celsius" :
-                            x = apx + "- 273"
-                        elif base == "Kelvin" and tar == "Fahrenheit" :
-                            x = "((9/5)*(" + apx + "- 273)) + 32"
-                        elif base == "Fahrenheit" and tar == "Celsius" :
-                            x = "(5/9)*(" + apx + " - 32)"
-                        elif base == "Fahrenheit" and tar == "Kelvin" :
-                            x = "((5/9)*(" + apx + " - 32)) + 273"
-                        else:
-                            x = apx
-                        display2.set(str(eval(x)))
-            except:
-                None
-            
-        else:
-            try:
-                if act.get() == "2":
-                        display2.set(display2.get() + txt)
-                        base = combo2.get()
-                        tar = combo1.get()
-                        sq1="SELECT Value FROM " + convertor_typ + " WHERE Unit= '" + base +"'"
-                        sq2="SELECT Value FROM " + convertor_typ + " WHERE Unit= '" + tar +"'"
-                        mycursor_con.execute(sq1)
-                        b = mycursor_con.fetchall()
-                        mycursor_con.execute(sq2)
-                        a = mycursor_con.fetchall()
-                        a = a[0]
-                        a = a[0]
-                        b = b[0]
-                        b = b[0]
-                        display1.set(str(eval("(" + display2.get() + ")*(" + a + ")/(" + b + ")")))
-
-                elif act.get() == "1":
-                        display1.set(display1.get() + txt)
-                        base = combo1.get()
-                        tar = combo2.get()
-                        sq1="SELECT Value FROM " + convertor_typ + " WHERE Unit= '" + base +"'"
-                        sq2="SELECT Value FROM " + convertor_typ + " WHERE Unit= '" + tar +"'"
-                        mycursor_con.execute(sq1)
-                        b = mycursor_con.fetchall()
-                        mycursor_con.execute(sq2)
-                        a = mycursor_con.fetchall()
-                        a = a[0]
-                        a = a[0]
-                        b = b[0]
-                        b = b[0]
-                        display2.set(str(eval("(" + display1.get() + ")*(" + a + ")/(" + b + ")")))
-            except:
-                None
+            elif act.get() == "1":
+                display1.set(display1.get() + txt)
+                base = combo1.get()
+                tar = combo2.get()
+                result = Unit_convertor.convert(convertor_typ,base,tar,float(display1.get()))
+                display2.set(str(result))
+        except:
+            None
                   
     display1_view.place(x=23,y=15,width=294)
     display2_view.place(x=23,y=125,width=294)
@@ -2197,69 +1952,18 @@ slider.place(width=40,height=40)
 head = Label(window,image = sd_head)
 head.place(height=40,width=340)
 cal()
-#history----------------------------------------------------------------------------------------
-try:
-    mydb = mysql.connector.connect(
-      host="localhost",
-      user="root",
-      passwd="1234",
-      database="History"
-    )
-    mycursor = mydb.cursor()
-#--------    
-except:
-    mydb = mysql.connector.connect(
-      host="localhost",
-      user="root",
-      passwd="1234"
-    )
-    mycursor = mydb.cursor()
-    mycursor.execute("CREATE DATABASE History")
-    mycursor.execute("USE History")
-    mycursor.execute("CREATE TABLE standard_history(id INT AUTO_INCREMENT PRIMARY KEY, ques VARCHAR(255), sol VARCHAR(255))")
-    mycursor.execute("CREATE TABLE scientific_history(id INT AUTO_INCREMENT PRIMARY KEY, ques VARCHAR(255), sol VARCHAR(255))")
-    mydb.commit()
-    
-#--------
-sdi = "INSERT INTO standard_history(ques, sol) VALUES (%s, %s)"
-sci = "INSERT INTO scientific_history(ques, sol) VALUES (%s, %s)"   
-#-----------------------------------------------------------------------------------------------
-#Data-----------------------------------------------------------------------------------------
-try:
-    mydb_cur = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        passwd="1234",
-        database="currencydata"
-    )
-    mycursor_cur = mydb_cur.cursor()
-except:
-    mydb_cur = mysql.connector.connect(
-      host="localhost",
-      user="root",
-      passwd="1234"
-    )
-    convert_xml_currency()
-    mycursor_cur = mydb_cur.cursor()
-    mycursor_cur.execute("USE currencydata")
 
-try:
-    mydb_con = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        passwd="1234",
-        database="data"
-    )
-    mycursor_con = mydb_con.cursor()
-except:
-    mydb_con = mysql.connector.connect(
-      host="localhost",
-      user="root",
-      passwd="1234"
-    )
-    convert_csv_data()
-    mycursor_con = mydb_con.cursor()
-    mycursor_con.execute("USE data")
+# History Managers
+history_manager = HistoryManager(file_name = "module\Data\history.json")
+history_manager.load_history()
+
+# Convertors
+Unit_convertor = UnitConvertor("module\Data\conversion_data.json")
+Currency_convertor = CurrencyConvertor("module\Data\currency_data.json")
+
+API_URL = "https://v6.exchangerate-api.com/v6/e3baf11a3e30543d2b3c46c8/latest/USD"
+JSON_FILE_PATH = "module\Data\currency_data.json"
+Currency_data_updater = CurrencyDataUpdater(API_URL, JSON_FILE_PATH)
 
 #themes-------------------------------------------------------------------------------------------------------------------------------------------
 def theme_window():
