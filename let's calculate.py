@@ -1,23 +1,21 @@
-#modules  imported---------------------------------------------------------------------------------------------------------
-#pre-defined---------------------------------------------------------------------------------------------------------------
 from tkinter import *
 from tkinter import messagebox
 import math
 import tkinter.ttk as ttk
 import pandas as pd
-#created ------------------------------------------------------------------------------------------------------------------
 from module.functions import *
-from module.CurrencyData import CurrencyDataUpdater, CurrencyConvertor
+from Convertors.CurrencyData import CurrencyDataUpdater, CurrencyConvertor
 from module.HistoryManager import HistoryManager
-from module.UnitConvertor import UnitConvertor
+from Convertors.UnitConvertor import UnitConvertor
 from module.theme_data import *
+from module.GetCredentials import *
 #--------------------------------------------------------------------------------------------------------------------------
 #theme data----------------------------------------------------------------------------------------------------------------
 try:
-    loc_data = pd.read_csv('resources\locus.csv')
+    loc_data = pd.read_csv('Data\locus.csv')
 except:
     create_locus_csv()
-    loc_data = pd.read_csv('resources\locus.csv')
+    loc_data = pd.read_csv('Data\locus.csv')
 
 geo = loc_data.iloc[0][0]
 #--------------------------------------------------------------------------------------------------------------------------
@@ -32,11 +30,11 @@ window.iconphoto(False, window_icon)
 #--------------------------------------------------------------------------------------------------------------------------
 #Manage Theme -------------------------------------------------------------------------------------------------------------
 try:
-    thm = pd.read_csv('resources/theme.csv')
+    thm = pd.read_csv('Data/theme.csv')
     
 except:
     create_data()
-    thm = pd.read_csv('resources/theme.csv')
+    thm = pd.read_csv('Data/theme.csv')
 
 thm = thm.iloc[0]
 thm = list(thm)
@@ -1954,16 +1952,13 @@ head.place(height=40,width=340)
 cal()
 
 # History Managers
-history_manager = HistoryManager(file_name = "module\Data\history.json")
+history_manager = HistoryManager(HISTORY)
 history_manager.load_history()
 
 # Convertors
-Unit_convertor = UnitConvertor("module\Data\conversion_data.json")
-Currency_convertor = CurrencyConvertor("module\Data\currency_data.json")
-
-API_URL = "https://v6.exchangerate-api.com/v6/e3baf11a3e30543d2b3c46c8/latest/USD"
-JSON_FILE_PATH = "module\Data\currency_data.json"
-Currency_data_updater = CurrencyDataUpdater(API_URL, JSON_FILE_PATH)
+Unit_convertor = UnitConvertor(CONVERSION_FACTORS)
+Currency_convertor = CurrencyConvertor(CURRENCY_DATA)
+Currency_data_updater = CurrencyDataUpdater(API_URL, CURRENCY_DATA)
 
 #themes-------------------------------------------------------------------------------------------------------------------------------------------
 def theme_window():

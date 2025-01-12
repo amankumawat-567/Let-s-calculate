@@ -115,27 +115,3 @@ class AngleConvertor:
             raise ValueError("Invalid angle units provided.")
         
         raise ValueError("Conversion between the specified units is not supported.")
-
-# Example usage:
-if __name__ == "__main__":
-    # Initialize the AngleConvertor
-    converter = AngleConvertor()
-
-    # Example conversions
-    degrees_value = 90
-    radians_value = converter.convert(degrees_value, "Degrees", "Radians")
-    gradians_value = converter.convert(degrees_value, "Degrees", "Gradians")
-
-    print(f"{degrees_value}° is equal to {radians_value} rad and {gradians_value} gon.")
-
-    radians_value = math.pi / 2
-    degrees_value = converter.convert(radians_value, "Radians", "Degrees")
-    gradians_value = converter.convert(radians_value, "Radians", "Gradians")
-
-    print(f"{radians_value} rad is equal to {degrees_value}° and {gradians_value} gon.")
-
-    gradians_value = 100
-    degrees_value = converter.convert(gradians_value, "Gradians", "Degrees")
-    radians_value = converter.convert(gradians_value, "Gradians", "Radians")
-
-    print(f"{gradians_value} gon is equal to {degrees_value}° and {radians_value} rad.")

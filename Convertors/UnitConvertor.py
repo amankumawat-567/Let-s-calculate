@@ -1,7 +1,7 @@
 import json
 from typing import Dict, List
-from module.AngleConvertor import AngleConvertor
-from module.TemperatureConvertor import TemperatureConvertor
+from Convertors.AngleConvertor import AngleConvertor
+from Convertors.TemperatureConvertor import TemperatureConvertor
 
 class UnitConvertor:
     """
@@ -92,16 +92,3 @@ class UnitConvertor:
         converted_value = value * (to_value / from_value)
 
         return converted_value
-
-
-# Example usage:
-if __name__ == "__main__":
-    # Initialize the UnitConvertor with the path to the converted JSON file
-    converter = UnitConvertor("module\Data\conversion_data.json")
-    
-    # Example: Convert 1000 meters to kilometers (length category)
-    try:
-        result = converter.convert("temperature", "Celsius", "Kelvin", 20)
-        print(f"20 Celsius is equal to {result} Kelvin.")
-    except ValueError as e:
-        print(e)

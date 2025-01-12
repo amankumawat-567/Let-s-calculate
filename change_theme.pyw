@@ -3,10 +3,9 @@ from tkinter import *
 from PIL import ImageTk, Image
 from pathlib import Path
 import os
-import mysql.connector
 import pandas as pd
 
-loc_data = pd.read_csv('resources\locus.csv')
+loc_data = pd.read_csv('Data\locus.csv')
 geo = loc_data.iloc[0][0]
 root = Tk()
 root.geometry(geo)
