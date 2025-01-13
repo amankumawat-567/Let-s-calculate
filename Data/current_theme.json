@@ -1,0 +1,11 @@
+{
+    "name": "dark theme",
+    "displaybg": "#0D1528",
+    "displayfg": "white",
+    "displayfbg": "#0D1528",
+    "displayffg": "gray64",
+    "buttonactivebg": "gray10",
+    "HOBbg": "#03E4D9",
+    "HOBfg": "white",
+    "HeadButtonActiveBg": "#0D1528"
+}

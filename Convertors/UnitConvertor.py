@@ -1,4 +1,5 @@
 import json
+import os
 from typing import Dict, List
 from Convertors.AngleConvertor import AngleConvertor
 from Convertors.TemperatureConvertor import TemperatureConvertor
@@ -8,14 +9,14 @@ class UnitConvertor:
     A class to load unit conversion data from a JSON file and perform unit conversions.
     """
 
-    def __init__(self, json_file: str):
+    def __init__(self, data_dir: str):
         """
         Initializes the UnitConvertor by loading the conversion data from a JSON file.
 
         Args:
             json_file (str): Path to the JSON file containing unit conversion data.
         """
-        self.json_file = json_file
+        self.json_file = os.path.join(data_dir, 'conversion_data.json')
         self.conversion_data = self.load_conversion_data()
         self.temperature_convertor = TemperatureConvertor()
         self.angle_convertor = AngleConvertor()

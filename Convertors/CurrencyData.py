@@ -13,7 +13,7 @@ class CurrencyDataUpdater:
         json_file_path (str): The path to store the updated currency data in JSON format.
     """
 
-    def __init__(self, api_url: str, json_file_path: str):
+    def __init__(self, api_url: str, data_dir: str):
         """
         Initialize the CurrencyDataUpdater with the API URL and file path.
 
@@ -22,7 +22,7 @@ class CurrencyDataUpdater:
             json_file_path (str): The path to store the JSON file.
         """
         self.api_url = api_url
-        self.json_file_path = json_file_path
+        self.json_file_path = os.path.join(data_dir, 'currency_data.json')
 
     def fetch_exchange_rates(self) -> Dict:
         """
@@ -69,14 +69,14 @@ class CurrencyConvertor:
     A class to load currency conversion rates from a JSON file and perform currency conversions.
     """
 
-    def __init__(self, json_file: str):
+    def __init__(self, data_dir: str):
         """
         Initializes the CurrencyConvertor by loading the conversion data from a JSON file.
 
         Args:
             json_file (str): Path to the JSON file containing currency conversion data.
         """
-        self.json_file = json_file
+        self.json_file = os.path.join(data_dir, 'currency_data.json')
         self.conversion_data = self.load_conversion_data()
 
     def load_conversion_data(self) -> Dict[str, float]:
@@ -128,31 +128,3 @@ class CurrencyConvertor:
         converted_amount = amount * (to_rate / from_rate)
 
         return converted_amount
-
-
-# Example usage:
-if __name__ == "__main__":
-    # Define the API URL and JSON file path
-    API_URL = "https://v6.exchangerate-api.com/v6/e3baf11a3e30543d2b3c46c8/latest/USD"
-    JSON_FILE_PATH = "module\Data\currency_data.json"
-
-    # Initialize and run the updater
-    updater = CurrencyDataUpdater(API_URL, JSON_FILE_PATH)
-    updater.run()
-    
-    # Initialize the CurrencyConvertor with the path to the JSON file containing conversion rates
-    converter = CurrencyConvertor("module\Data\currency_data.json")
-    
-    # Example: Convert 100 USD to EUR
-    try:
-        result = converter.convert("USD", "EUR", 100)
-        print(f"100 USD is equal to {result} EUR.")
-    except ValueError as e:
-        print(e)
-
-    # Example: Convert 50 EUR to GBP
-    try:
-        result = converter.convert("EUR", "GBP", 50)
-        print(f"50 EUR is equal to {result} GBP.")
-    except ValueError as e:
-        print(e)

@@ -113,27 +113,3 @@ class TemperatureConvertor:
             raise ValueError("Invalid temperature units provided.")
         
         raise ValueError("Conversion between the specified units is not supported.")
-
-# Example usage:
-if __name__ == "__main__":
-    # Initialize the TemperatureConvertor
-    converter = TemperatureConvertor()
-
-    # Example conversions
-    celsius_value = 25
-    fahrenheit_value = converter.convert(celsius_value, "Celsius", "Fahrenheit")
-    kelvin_value = converter.convert(celsius_value, "Celsius", "Kelvin")
-
-    print(f"{celsius_value}°C is equal to {fahrenheit_value}°F and {kelvin_value}K.")
-
-    fahrenheit_value = 77
-    celsius_value = converter.convert(fahrenheit_value, "Fahrenheit", "Celsius")
-    kelvin_value = converter.convert(fahrenheit_value, "Fahrenheit", "Kelvin")
-
-    print(f"{fahrenheit_value}°F is equal to {celsius_value}°C and {kelvin_value}K.")
-
-    kelvin_value = 298.15
-    celsius_value = converter.convert(kelvin_value, "Kelvin", "Celsius")
-    fahrenheit_value = converter.convert(kelvin_value, "Kelvin", "Fahrenheit")
-
-    print(f"{kelvin_value}K is equal to {celsius_value}°C and {fahrenheit_value}°F.")

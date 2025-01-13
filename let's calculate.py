@@ -7,37 +7,16 @@ from module.functions import *
 from Convertors.CurrencyData import CurrencyDataUpdater, CurrencyConvertor
 from module.HistoryManager import HistoryManager
 from Convertors.UnitConvertor import UnitConvertor
-from module.theme_data import *
 from module.GetCredentials import *
-#--------------------------------------------------------------------------------------------------------------------------
-#theme data----------------------------------------------------------------------------------------------------------------
-try:
-    loc_data = pd.read_csv('Data\locus.csv')
-except:
-    create_locus_csv()
-    loc_data = pd.read_csv('Data\locus.csv')
+#NEW--------------------------------------------------------------------------------------------------------------------------
+from ui_setup import initialize_main_window
+from module.ThemeManager import ThemeManager
+from module.GetCredentials import *
+Theme_manager = ThemeManager(theme_dir=THEME_DIRECTORY, data_dir=DATA_DIRECTORY)
+window = initialize_main_window(geo=Theme_manager.get_locus())
 
-geo = loc_data.iloc[0][0]
-#--------------------------------------------------------------------------------------------------------------------------
-#Main window---------------------------------------------------------------------------------------------------------------
-window = Tk()
-window.geometry(geo)
-window.wait_visibility(window)
-window.wm_attributes("-alpha",0.9)
-window.title("Calculater")
-window_icon = PhotoImage(file = 'resources\icons and photos\Calculater_icon(16x16).png')
-window.iconphoto(False, window_icon)
-#--------------------------------------------------------------------------------------------------------------------------
-#Manage Theme -------------------------------------------------------------------------------------------------------------
-try:
-    thm = pd.read_csv('Data/theme.csv')
-    
-except:
-    create_data()
-    thm = pd.read_csv('Data/theme.csv')
-
-thm = thm.iloc[0]
-thm = list(thm)
+#temp---------------------------------
+thm = list(Theme_manager.get_theme().values())
 
 a = thm[0]
 b = "\ "
@@ -45,9 +24,6 @@ b = b[0]
 a = b + a
 #--------------------------------------------------------------------------------------------------------------------------
 #images ------------------------------------------------------------------------------------------------------------------
-graph_page = PhotoImage(file = 'resources\icons and photos\graph_choice.png')
-graph_start = PhotoImage(file = 'resources\loading\Begain_graph.png')
-plot_but_image = PhotoImage(file = 'resources\icons and photos\plot_but.png')
 About_slider = PhotoImage(file = 'resources\icons and photos\slider.png')
 About_page_img = PhotoImage(file="resources\icons and photos\About.png")
 About_head =PhotoImage(file="resources\icons and photos\head.png")
@@ -61,6 +37,8 @@ thm4 = PhotoImage(file="resources\Themes\Fruit theme\Thm.png")
 thm5 = PhotoImage(file="resources\Themes\Forest theme\Thm.png")
 thm6 = PhotoImage(file="resources\Themes\Vector theme\Thm.png")
 thm7 = PhotoImage(file="resources\Themes\Wooden theme\Thm.png")
+clear_hist = PhotoImage(file = 'resources\icons and photos\clear_hist.png')
+hist_img = PhotoImage(file = 'resources\icons and photos\hist.png')
 #calculater buttons---------------------------------------------------------------------------------------------------
 sd_back_space_image = PhotoImage(file = 'resources\Themes' + a + '\Standard\Back_space.png')
 sd_head = PhotoImage(file = 'resources\Themes' + a + '\Standard\head.png')
@@ -84,8 +62,6 @@ sd_s9_image = PhotoImage(file = 'resources\Themes' + a + '\Standard\S9.png')
 sd_ss_image = PhotoImage(file = 'resources\Themes' + a + '\Standard\Ss.png')
 sd_point_image = PhotoImage(file = 'resources\Themes' + a + '\Standard\point.png')
 sdback = PhotoImage(file = 'resources\Themes' + a + '\Standard\standard.png')
-clear_hist = PhotoImage(file = 'resources\icons and photos\clear_hist.png')
-hist_img = PhotoImage(file = 'resources\icons and photos\hist.png')
 #---------------------------------------------------------------------------------------------------------------------
 #slider button -------------------------------------------------------------------------------------------------------
 slider_image = PhotoImage(file = 'resources\Themes' + a + '\Basic comp\Slider_image.png')
@@ -1956,9 +1932,9 @@ history_manager = HistoryManager(HISTORY)
 history_manager.load_history()
 
 # Convertors
-Unit_convertor = UnitConvertor(CONVERSION_FACTORS)
-Currency_convertor = CurrencyConvertor(CURRENCY_DATA)
-Currency_data_updater = CurrencyDataUpdater(API_URL, CURRENCY_DATA)
+Unit_convertor = UnitConvertor(DATA_DIRECTORY)
+Currency_convertor = CurrencyConvertor(DATA_DIRECTORY)
+Currency_data_updater = CurrencyDataUpdater(API_URL, DATA_DIRECTORY)
 
 #themes-------------------------------------------------------------------------------------------------------------------------------------------
 def theme_window():

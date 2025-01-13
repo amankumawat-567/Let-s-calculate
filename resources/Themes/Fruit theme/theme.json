@@ -1,0 +1,11 @@
+{
+    "name": "Fruit theme",
+    "displaybg": "#ECEBD6",
+    "displayfg": "orange",
+    "displayfbg": "#ECEBD6",
+    "displayffg": "orange",
+    "buttonactivebg": "#9CA59B",
+    "HOBbg": "#FFC000",
+    "HOBfg": "#ECEBD6",
+    "HeadButtonActiveBg": "#BFCDA2"
+}

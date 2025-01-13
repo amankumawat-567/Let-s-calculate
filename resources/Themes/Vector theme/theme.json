@@ -1,0 +1,11 @@
+{
+    "name": "Vector theme",
+    "displaybg": "#111111",
+    "displayfg": "white",
+    "displayfbg": "#111111",
+    "displayffg": "gray64",
+    "buttonactivebg": "#111111",
+    "HOBbg": "#03E4D9",
+    "HOBfg": "white",
+    "HeadButtonActiveBg": "#1BD9C9"
+}
