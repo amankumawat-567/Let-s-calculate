@@ -6,7 +6,11 @@ with open('CREDENTIALS.yaml', 'r') as f:
 API_KEY = credentials["API_KEY"]
 BASE_CURRENCY = credentials["BASE_CURRENCY"]
 
-API_URL = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/{BASE_CURRENCY}"
-HISTORY = "Data\history.json"
-DATA_DIRECTORY = "Data"
-THEME_DIRECTORY = 'resources\Themes'
+class Credentials:
+    API_URL: str
+    HISTORY: str = "Data\history.json"
+    DATA_DIRECTORY: str = "Data"
+    THEME_DIRECTORY: str = 'resources\Themes'
+    
+CREDENTIALS = Credentials()
+CREDENTIALS.API_URL = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/{BASE_CURRENCY}"

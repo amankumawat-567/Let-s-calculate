@@ -1,14 +1,14 @@
 from tkinter import Tk, Frame, Label, StringVar, Entry, Button
 from typing import Dict
 from module import ImageManager, HistoryManager
-from Routers.History import History
+from Routers import History
 
 class Baseframe:
-    def __init__(self, parent:Tk, theme: Dict[str,str],image_manager: ImageManager):
+    def __init__(self,name:str , parent:Tk, theme: Dict[str,str],image_manager: ImageManager):
         self.parent = parent
         self.theme = theme
         self.image_manager = image_manager
-        self.name: str = "frame_name"
+        self.name = name
         
         self.frame = Frame(self.parent)
         self.height: int = 0
@@ -16,9 +16,9 @@ class Baseframe:
         
     def _ui_setup(self):
         head = Label(self.frame,image = self.image_manager.get(self.name,"head"))
-        head.place(y=0,height=40,width=self.width)
+        head.place(x=38,y=0,height=40)
         backlabel = Label(self.frame,image = self.image_manager.get(self.name,self.name))
-        backlabel.place(y=40,height=self.height-40,width=self.width)
+        backlabel.place(x=0,y=40,height=self.height-40,width=self.width)
         
     def show(self):
         self.frame.place(x=0,y=0,height=self.height,width=self.width)
@@ -27,8 +27,8 @@ class Baseframe:
         self.frame.place_forget()
         
 class BaseCalculater(Baseframe):
-    def __init__(self, parent:Tk, theme: Dict[str,str],image_manager: ImageManager, history_manager: HistoryManager):
-        super().__init__(parent, theme, image_manager)
+    def __init__(self, name:str, parent:Tk, theme: Dict[str,str],image_manager: ImageManager, history_manager: HistoryManager):
+        super().__init__(name, parent, theme, image_manager)
         self.history_manager = history_manager
         
         self.display = StringVar()
@@ -49,10 +49,10 @@ class BaseCalculater(Baseframe):
                              justify='right',bd=0, textvariable = self.display,
                              bg=self.theme['displaybg'],fg=self.theme['displayfg'])
         
-        history_button = Button(self.parent,image = self.image_manager.get("Basic comp","History"),
+        history_button = Button(self.frame,image = self.image_manager.get("Basic comp","History"),
                              bd=0,activebackground=self.theme["HeadButtonActiveBg"])
         
-        history_label = Label(self.parent,image=self.image_manager.get("History","hist"))
+        history_label = Label(self.frame,image=self.image_manager.get("History","hist"))
         
         displayf_view.place(x=13, y=72, width=self.width - 27, height=25)
         display_view.place(x=23, y=118, width=self.width - 46, height=50)

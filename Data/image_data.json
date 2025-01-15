@@ -67,10 +67,9 @@
     "currency convertor": {
             "Back_space": "currency convertor/Back_space.png",
             "clear": "currency convertor/clear.png",
-            "currency_convertor": "currency convertor/currency_convertor.png",
+            "currency convertor": "currency convertor/currency_convertor.png",
             "cur_data_upg": "currency convertor/cur_data_upg.png",
             "equal": "currency convertor/equal.png",
-            "graph": "currency convertor/graph.png",
             "head": "currency convertor/head.png",
             "point": "currency convertor/point.png",
             "S0": "currency convertor/S0.png",
