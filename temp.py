@@ -3,7 +3,7 @@ from tkinter import messagebox
 import math
 import tkinter.ttk as ttk
 import pandas as pd
-from module.functions import *
+from FunctionPack.MathFunction.MathFunctions import *
 from Convertors.CurrencyData import CurrencyDataUpdater, CurrencyConvertor
 from module.HistoryManager import HistoryManager
 from Convertors.UnitConvertor import UnitConvertor

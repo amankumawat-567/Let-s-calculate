@@ -1,6 +1,4 @@
-pillow
-matplotlib
-mysql-connector-python
+# requirements.txt
+
+PyYAML
 requests
-imageio
-pandas

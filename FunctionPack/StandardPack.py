@@ -1,21 +1,11 @@
-# Functional Module
-import math
+from FunctionPack import PackTemplate
+from FunctionPack.MathFunction import *
 
-class StandardPack:
+class StandardPack(PackTemplate):
     def __init__(self,display,displayf,replacement_dict,max_length=None):
-        self.display = display
+        super().__init__(display,max_length)
         self.displayf = displayf
         self.replacement_dict = replacement_dict
-        self.max_length = max_length
-
-    def update_display(self, text):
-        """
-        Update the display text, ensuring it doesn't exceed the max length.
-        """
-        current = self.display.get()
-        if self.max_length and len(current) >= self.max_length:
-            self.display.set(current[:self.max_length - 1])
-        self.display.set(current + text)
 
     def clear_display(self):
         """
@@ -74,19 +64,16 @@ class StandardPack:
                 result = eval(expression)
             except Exception:
                 result = "Error"
+
             self.display.set(result)
+
+        return expression, result
 
     def add_number(self, number):
         """
         Add a number to the display.
         """
         self.update_display(str(number))
-
-    def add_function(self, function):
-        """
-        Add a mathematical function to the display.
-        """
-        self.update_display( function + "(")
         
     def change_sign(self):
         current = self.display.get()
@@ -96,28 +83,3 @@ class StandardPack:
             self.display.set(current[1:])
         else :
             self.display.set("-" + current)
-
-def square(display):
-    """
-    Add square operation to the display.
-    """
-    display.set(display.get() + "^(2)")
-
-def cube(display):
-    """
-    Add cube operation to the display.
-    """
-    display.set(display.get() + "^(3)")
-
-def factorial(display):
-    """
-    Add factorial operation to the display.
-    """
-    display.set("fac(" + display.get() + ")")
-
-# Math helper functions
-def log(x):
-    return math.log10(x)
-
-def ln(x):
-    return math.log(x)

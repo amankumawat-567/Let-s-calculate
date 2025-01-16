@@ -1,48 +1,49 @@
 from tkinter import Button
 from typing import List
 from Routers import BaseCalculater
+from FunctionPack import ScientificPack
+from FunctionPack.MathFunction import angle_unit
 
 class ScientificCalculator(BaseCalculater):
     def __init__(self,parent, theme, history_manager, image_manager):
-        super().__init__("scientific", parent,theme,image_manager,history_manager)
+        replacement_dict = dict(zip(["÷","^","ᵡ","e","ᴨ","³√(","√("],["/","**","*","2.718281828459045","3.141592653589793","cur(","sqr("]))
+        super().__init__("scientific", parent,theme,image_manager,history_manager,replacement_dict)
         self.height = 550
         self.width = 595
-        self.replacement_dict = dict(zip(["÷","^","ᵡ","e","ᴨ","³√(","√("], 
-                                         ["/","**","*","2.718281828459045","3.141592653589793","cur(","sqr("]))
         self.switchvar: bool = False
         self.angle_unit: str = 'Degrees'
         self.scientific_buttons: List[Button] = []
+        self.fxn.append(ScientificPack(self.display))
         self._ui_setup()
-
     
     def _ui_setup(self):
         super()._ui_setup()
         
-        standard_Buttons_config = [[("clear"),("Bracket"),("Back_space"),("divide")],
-                   [("S7"),("S8"),("S9"),("mult")],
-                   [("S4"),("S5"),("S6"),("add")],
-                   [("S1"),("S2"),("S3"),("subtr")],
-                   [("Ss"),("S0"),("point"),("equal")]]
-        
-        scientific_Buttons_config = [[[("Root")],
-                    [("sin"),('cos'),('Tan')],
-                    [('ln'),('log'),('Bix')],
-                    [('ex'),('X2'),('Xy')],
-                    [('mod'),('pi'),('e')]],
-                    [[("cuberoot")],
-                    [("Asin"),('Acos'),('Atan')],
-                    [("sinh"),('cosh'),('Tanh')],
-                    [("Asinh"),('Acosh'),('Atanh')],
-                    [('exp2'),('X3'),('X!')]]]
+        standard_Buttons_config = [[("clear",self.fxn[0].clear_display),("Bracket",self.fxn[0].toggle_bracket),("Back_space",self.fxn[0].backspace),("divide",lambda: self.fxn[0].add_operator(' ÷ '))],
+                   [("S7",lambda:self.fxn[0].add_number(7)),("S8",lambda:self.fxn[0].add_number(8)),("S9",lambda:self.fxn[0].add_number(9)),("mult",lambda: self.fxn[0].add_operator(' ᵡ '))],
+                   [("S4",lambda:self.fxn[0].add_number(4)),("S5",lambda:self.fxn[0].add_number(5)),("S6",lambda:self.fxn[0].add_number(6)),("add",lambda: self.fxn[0].add_operator(' + '))],
+                   [("S1",lambda:self.fxn[0].add_number(1)),("S2",lambda:self.fxn[0].add_number(2)),("S3",lambda:self.fxn[0].add_number(3)),("subtr",lambda: self.fxn[0].add_operator(' - '))],
+                   [("Ss",self.fxn[0].change_sign),("S0",lambda:self.fxn[0].add_number(0)),("point",lambda:self.fxn[0].update_display('.')),("equal",self.calculate)]]
+
+        scientific_Buttons_config = [[[("Root", lambda:self.fxn[1].add_function("√"))],
+                    [("sin", lambda:self.fxn[1].add_function("sin")),('cos', lambda:self.fxn[1].add_function("cos")),('Tan', lambda:self.fxn[1].add_function("tan"))],
+                    [('ln', lambda:self.fxn[1].add_function("ln")),('log', lambda:self.fxn[1].add_function("log")),('Bix', lambda:self.fxn[1].add_function("1÷"))],
+                    [('ex', lambda:self.fxn[1].add_function("e^")),('X2', lambda:self.fxn[1].add_expression("^(2)")),('Xy', lambda:self.fxn[1].add_expression("^"))],
+                    [('mod', lambda:self.fxn[1].add_function("abs")),('pi', lambda:self.fxn[1].add_expression("ᴨ")),('e', lambda:self.fxn[1].add_expression("e"))]],
+                    [[("cuberoot", lambda:self.fxn[1].add_function("³√"))],
+                    [("Asin", lambda:self.fxn[1].add_function("asin")),('Acos', lambda:self.fxn[1].add_function("acos")),('Atan', lambda:self.fxn[1].add_function("atan"))],
+                    [("sinh", lambda:self.fxn[1].add_function("sinh")),('cosh', lambda:self.fxn[1].add_function("cosh")),('Tanh', lambda:self.fxn[1].add_function("tanh"))],
+                    [("Asinh", lambda:self.fxn[1].add_function("asinh")),('Acosh', lambda:self.fxn[1].add_function("acosh")),('Atanh', lambda:self.fxn[1].add_function("atanh"))],
+                    [('exp2', lambda:self.fxn[1].add_function("2^")),('X3', lambda:self.fxn[1].add_expression("^(3)")),('X!', lambda:self.fxn[1].add_function("fac"))]]]
         
         y_pointer  = 200
         width,height = 85,70
         for buttons in standard_Buttons_config:
             x_pointer = 255
-            for button in buttons:
+            for image, function in buttons:
                 Button(
-                    self.frame,image = self.image_manager.get(self.name,button),
-                    bd=0,activebackground=self.theme['buttonactivebg']
+                    self.frame,image = self.image_manager.get(self.name,image),
+                    bd=0,activebackground=self.theme['buttonactivebg'], command= function
                     ).place(y=y_pointer, x=x_pointer, width=width, height=height)
                 x_pointer += width
             y_pointer += height
@@ -51,9 +52,9 @@ class ScientificCalculator(BaseCalculater):
             Button_set = []
             for row in sets:
                 r = []
-                for button_image in row:
-                    button = Button(self.frame, image=self.image_manager.get(self.name,button_image),
-                                    bd=0, activebackground=self.theme['buttonactivebg'])
+                for image, function in row:
+                    button = Button(self.frame, image=self.image_manager.get(self.name,image),
+                                    bd=0, activebackground=self.theme['buttonactivebg'], command=function)
                     r.append(button)
                 Button_set.append(r)
             self.scientific_buttons.append(Button_set)           

@@ -1,6 +1,7 @@
 from tkinter import Tk, Frame, Label, StringVar, Entry, Button
 from typing import Dict
 from module import ImageManager, HistoryManager
+from FunctionPack import StandardPack
 from Routers import History
 
 class Baseframe:
@@ -27,16 +28,15 @@ class Baseframe:
         self.frame.place_forget()
         
 class BaseCalculater(Baseframe):
-    def __init__(self, name:str, parent:Tk, theme: Dict[str,str],image_manager: ImageManager, history_manager: HistoryManager):
+    def __init__(self, name:str, parent:Tk, theme: Dict[str,str],image_manager: ImageManager, history_manager: HistoryManager, replacement_dict = Dict[str,str]):
         super().__init__(name, parent, theme, image_manager)
         self.history_manager = history_manager
         
         self.display = StringVar()
         self.displayf = StringVar()
-        self.history = StringVar()
-        
-        self.history.set("OFF")
-        self.replacement_dict = {}
+        self.history_is_active:bool = False  
+        self.replacement_dict = replacement_dict
+        self.fxn = [StandardPack(self.display,self.displayf,self.replacement_dict)]
         
     def _ui_setup(self):
         super()._ui_setup()
@@ -61,20 +61,26 @@ class BaseCalculater(Baseframe):
         history_button.place(x=self.width - 60, y=0, width=60, height=40)
         
         history_button.configure(command=self.__open_history)
-        History(display=self.display, frame=self.frame,frame_width=self.width ,
+        self.history = History(display=self.display, frame=self.frame,frame_width=self.width ,
                 history_manager= self.history_manager, image_manager= self.image_manager, 
                 replacement_dict= self.replacement_dict)
         
+    def calculate(self):
+        if self.display:
+            ques,ans = self.fxn[0].calculate()
+            if ans != "Error":
+                self.history.add_history_entry(question=ques,answer=ans)
+                
         
     def __open_history(self):
-        if self.history.get() == "OFF":
-            self.history.set("ON")
-            self.parent.maxsize(self.width + 360,self.height)
-            self.parent.minsize(self.width + 360,self.height)
-        elif self.history.get() == "ON":
-            self.history.set("OFF")
+        if self.history_is_active:
+            self.history_is_active = False
             self.parent.maxsize(self.width,self.height)
             self.parent.minsize(self.width,self.height)
+        else:
+            self.history_is_active = True
+            self.parent.maxsize(self.width + 360,self.height)
+            self.parent.minsize(self.width + 360,self.height)
         
     def show(self):
         self.frame.place(x=0,y=0,height=self.height,width=self.width + 360)
