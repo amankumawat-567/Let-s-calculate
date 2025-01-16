@@ -1,7 +1,8 @@
 from tkinter import Tk, Button
 from module import CredentialsThemplate
 from module import ThemeManager, ImageManager, HistoryManager
-from Routers import StandardCalculator, ScientificCalculator, ProgrammingCalculator, Convertor, Pannel, Baseframe
+from Routers import StandardCalculator, ScientificCalculator, ProgrammingCalculator, Currency_convertor, Unit_convertor, Pannel, Baseframe
+from Convertors import UnitConvertor, CurrencyConvertor, CurrencyDataUpdater
 
 class FrameWork:
     def __init__(self):
@@ -12,6 +13,9 @@ class FrameWork:
         self.Theme_manager = ThemeManager(theme_dir=Credentials.THEME_DIRECTORY, data_dir=Credentials.DATA_DIRECTORY)
         self.Iamge_manager = ImageManager(Credentials.DATA_DIRECTORY,Credentials.THEME_DIRECTORY,self.Theme_manager.available_themes)
         self.history_manager = HistoryManager(Credentials.HISTORY)
+        self.currency_convertor_function = CurrencyConvertor(Credentials.DATA_DIRECTORY)
+        self.currency_data_updater = CurrencyDataUpdater(Credentials.API_URL,Credentials.DATA_DIRECTORY)
+        self.unit_convertor = UnitConvertor(Credentials.DATA_DIRECTORY)
         self.ACTIVE_THEME = self.Theme_manager.get_theme()
         
     def initialize_main_window(self) -> Tk:
@@ -30,14 +34,17 @@ class FrameWork:
         self.Iamge_manager.load(theme = self.ACTIVE_THEME['name'])
         self.history_manager.load_history()
         
-    def switch_frame(self,window,Next_frame):
+    def switch_frame(self,window,Next_frame: str):
         self.Active_frame.hide()
-        self.Active_frame = getattr(self,Next_frame)
+        Next_frame = Next_frame.split()
+        if Next_frame[-1] == 'convertor':
+            self.convertor.set_type(Next_frame[0])
+        self.Active_frame = getattr(self,Next_frame[-1])
         self.Active_frame.show()
         self.__open_pannel()
         window.maxsize(self.Active_frame.width,self.Active_frame.height)
         window.minsize(self.Active_frame.width,self.Active_frame.height)
-        
+               
     def __open_pannel(self):
         if self.pannel_active:
             self.pannel.hide()
@@ -63,11 +70,12 @@ class FrameWork:
         self.programming_caculator = ProgrammingCalculator(parent=window, theme=self.ACTIVE_THEME,
                                                 image_manager = self.Iamge_manager)
         
-        self.currency_convertor = Convertor(name='currency convertor', parent=window, theme=self.ACTIVE_THEME,
-                                    image_manager=self.Iamge_manager)
+        self.currency_convertor = Currency_convertor(parent=window, theme=self.ACTIVE_THEME,
+                                    image_manager=self.Iamge_manager, Convertor_function=self.currency_convertor_function,
+                                    data_updater=self.currency_data_updater)
         
-        self.convertor = Convertor(name='convertor', parent=window, theme=self.ACTIVE_THEME,
-                                    image_manager=self.Iamge_manager)
+        self.convertor = Unit_convertor( parent=window, theme=self.ACTIVE_THEME,
+                                    image_manager=self.Iamge_manager, Convertor_function=self.unit_convertor)
         
         self.pannel = Pannel(parent=window,theme=self.ACTIVE_THEME,image_manager=self.Iamge_manager
                              , switch_fxn = lambda Next_frame: self.switch_frame(window,Next_frame))

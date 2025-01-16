@@ -48,9 +48,9 @@ class UnitConvertor:
         if category == "angle":
             return ["Degrees","Radians","Gradians"]
         
-        if category in self.unit_data:
-            units = self.unit_data[category]
-            return [unit["unit"] for unit in units]
+        if category in self.conversion_data:
+            units = self.conversion_data[category]
+            return list(units.keys())
         else:
             raise ValueError(f"Category '{category}' not found in the unit data.")
 

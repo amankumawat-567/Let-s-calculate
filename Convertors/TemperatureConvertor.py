@@ -99,16 +99,22 @@ class TemperatureConvertor:
                 return self.celsius_to_fahrenheit(value)
             elif to_unit == "Kelvin":
                 return self.celsius_to_kelvin(value)
+            else:
+                return value
         elif from_unit == "Fahrenheit":
             if to_unit == "Celsius":
                 return self.fahrenheit_to_celsius(value)
             elif to_unit == "Kelvin":
                 return self.fahrenheit_to_kelvin(value)
+            else:
+                return value
         elif from_unit == "Kelvin":
             if to_unit == "Celsius":
                 return self.kelvin_to_celsius(value)
             elif to_unit == "Fahrenheit":
                 return self.kelvin_to_fahrenheit(value)
+            else:
+                return value
         else:
             raise ValueError("Invalid temperature units provided.")
         

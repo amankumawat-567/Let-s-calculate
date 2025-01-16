@@ -1,5 +1,6 @@
 from tkinter import Label, StringVar, Entry, Button
 from Routers import Baseframe
+from FunctionPack import ProgrammingPack
 
 class ProgrammingCalculator(Baseframe):
     def __init__(self, parent, theme, image_manager):
@@ -10,11 +11,10 @@ class ProgrammingCalculator(Baseframe):
         self.hexa = StringVar()
         self.octa = StringVar()
         self.bine = StringVar()
-        self.Mode = StringVar()
-        self.Mode.set("decimal")
+        self.fxn = ProgrammingPack(self.dece,self.hexa,self.octa,self.bine)
         self.Buttons = []
         self._ui_setup()
-        self.__change_mode(None, Mode = self.Mode.get())
+        self.__change_mode(None, Mode = 'decimal')
         
     def _ui_setup(self):
         super()._ui_setup()
@@ -38,20 +38,20 @@ class ProgrammingCalculator(Baseframe):
         octlab = Label(self.frame,image = self.image_manager.get(self.name,"Oc"))
         binlab = Label(self.frame,image = self.image_manager.get(self.name,"Bi"))
         
-        button_config = [[("clear"),("Back_space"),("S7"),("S8"),("S9")],
-                         [("A"),("B"),("S4"),("S5"),("S6")],
-                         [("C"),("D"),("S1"),("S2"),("S3")],
-                         [("EE_"),("F"),("Ss"),("S0"),("equal")]]
+        button_config = [[("clear",self.fxn.clear),("Back_space",self.fxn.backspace),("S7", lambda: self.fxn.add_number(7)),("S8", lambda: self.fxn.add_number(8)),("S9", lambda: self.fxn.add_number(9))],
+                         [("A", lambda: self.fxn.add_character('A')),("B", lambda: self.fxn.add_character('B')),("S4", lambda: self.fxn.add_number(4)),("S5", lambda: self.fxn.add_number(5)),("S6", lambda: self.fxn.add_number(6))],
+                         [("C", lambda: self.fxn.add_character('C')),("D", lambda: self.fxn.add_character('D')),("S1", lambda: self.fxn.add_number(1)),("S2", lambda: self.fxn.add_number(2)),("S3", lambda: self.fxn.add_number(3))],
+                         [("EE_", lambda: self.fxn.add_character('E')),("F", lambda: self.fxn.add_character('F')),("Ss", self.fxn.toggle_sign),("S0", lambda: self.fxn.add_number(0)),("equal",lambda: self.fxn.operation(''))]]
         
         y_offset  = 230
         width,height = 85,70
         for row in button_config:
             x_offset = 0
             buttons = []
-            for image in row:
+            for image,function in row:
                 button = Button(self.frame, image = self.image_manager.get(self.name,image),
                                 activebackground=self.theme["buttonactivebg"],bg=self.theme["buttonactivebg"]
-                                ,bd=0)
+                                ,bd=0, command=function)
                 buttons.append(button)
                 button.place(y=y_offset, x=x_offset, width=width, height=height)
                 x_offset += width
@@ -73,7 +73,7 @@ class ProgrammingCalculator(Baseframe):
         Binbox.place(x=64,y=186,width=347,height=25)
         
     def __change_mode(self,event, Mode:str):
-        self.Mode.set(Mode)
+        self.fxn.set_active_entry(Mode)
         state_map = States_map.get_state_map(Mode)
         for button_row, state_row in zip(self.Buttons, state_map):
             for button, state in zip(button_row, state_row):

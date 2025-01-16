@@ -1,3 +1,5 @@
 from FunctionPack.PackTemplate import PackTemplate
 from FunctionPack.StandardPack import StandardPack
 from FunctionPack.ScientificPack import ScientificPack
+from FunctionPack.ConvertorPack import ConverterPack
+from FunctionPack.ProgrammingPack import ProgrammingPack

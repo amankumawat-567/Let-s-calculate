@@ -39,29 +39,29 @@ class Pannel:
                           height=51,bg="#0d1528",bd=0).grid(row=4,column=0,columnspan=2)
         Currency = Button(frame, image=self.image_manager.get(self.name,"Currency"),command=lambda:self.switch_fxn('currency_convertor'),
                           bd=0,bg="#0d1528",height=115,width=234,activebackground="#0d1528").grid(row=5,column=0,columnspan=2,padx=2,pady=2)
-        Volume = Button(frame, image=self.image_manager.get(self.name,"Volume"),command=lambda:self.switch_fxn('convertor'),
+        Volume = Button(frame, image=self.image_manager.get(self.name,"Volume"),command=lambda:self.switch_fxn('volume convertor'),
                         bd=0,bg="#0d1528",height=115,width=115,activebackground="#0d1528").grid(row=6,column=0,padx=2,pady=2)
-        Length = Button(frame, image=self.image_manager.get(self.name,"Length"),command=lambda:self.switch_fxn('convertor'),
+        Length = Button(frame, image=self.image_manager.get(self.name,"Length"),command=lambda:self.switch_fxn('length convertor'),
                         bd=0,bg="#0d1528",height=115,width=115,activebackground="#0d1528").grid(row=6,column=1,padx=2,pady=2)
-        Weight_and_Mass = Button(frame, image=self.image_manager.get(self.name,"Weight and Mass"),command=lambda:self.switch_fxn('convertor'),
+        Weight_and_Mass = Button(frame, image=self.image_manager.get(self.name,"Weight and Mass"),command=lambda:self.switch_fxn('mass convertor'),
                                  bd=0,bg="#0d1528",height=238,width=115,activebackground="#0d1528").grid(row=7,column=0,rowspan=2,padx=2,pady=2)
-        Temperature = Button(frame, image=self.image_manager.get(self.name,"Temperature"),command=lambda:self.switch_fxn('convertor'),
+        Temperature = Button(frame, image=self.image_manager.get(self.name,"Temperature"),command=lambda:self.switch_fxn('temperature convertor'),
                              bd=0,bg="#0d1528",height=115,width=115,activebackground="#0d1528").grid(row=7,column=1,padx=2,pady=2)
-        Energy = Button(frame, image=self.image_manager.get(self.name,"Energy"),command=lambda:self.switch_fxn('convertor'),
+        Energy = Button(frame, image=self.image_manager.get(self.name,"Energy"),command=lambda:self.switch_fxn('energy convertor'),
                         bd=0,bg="#0d1528",height=115,width=115,activebackground="#0d1528").grid(row=8,column=1,padx=2,pady=2)
-        Area = Button(frame, image=self.image_manager.get(self.name,"Area"),command=lambda:self.switch_fxn('convertor'),
+        Area = Button(frame, image=self.image_manager.get(self.name,"Area"),command=lambda:self.switch_fxn('area convertor'),
                       bd=0,bg="#0d1528",height=115,width=115,activebackground="#0d1528").grid(row=9,column=0,padx=2,pady=2)
-        Speed= Button(frame, image=self.image_manager.get(self.name,"Speed"),command=lambda:self.switch_fxn('convertor'),
+        Speed= Button(frame, image=self.image_manager.get(self.name,"Speed"),command=lambda:self.switch_fxn('speed convertor'),
                       bd=0,bg="#0d1528",height=115,width=115,activebackground="#0d1528").grid(row=9,column=1,padx=2,pady=2)
-        Time = Button(frame, image=self.image_manager.get(self.name,"Time"),command=lambda:self.switch_fxn('convertor'),
+        Time = Button(frame, image=self.image_manager.get(self.name,"Time"),command=lambda:self.switch_fxn('time convertor'),
                       bd=0,bg="#0d1528",height=115,width=234,activebackground="#0d1528").grid(row=10,column=0,columnspan=2,padx=2,pady=2)
-        Data = Button(frame, image=self.image_manager.get(self.name,"Data"),command=lambda:self.switch_fxn('convertor'),
+        Data = Button(frame, image=self.image_manager.get(self.name,"Data"),command=lambda:self.switch_fxn('data convertor'),
                       bd=0,bg="#0d1528",height=115,width=115,activebackground="#0d1528").grid(row=11,column=0,padx=2,pady=2)
-        Power= Button(frame, image=self.image_manager.get(self.name,"power"),command=lambda:self.switch_fxn('convertor'),
+        Power= Button(frame, image=self.image_manager.get(self.name,"power"),command=lambda:self.switch_fxn('power convertor'),
                       bd=0,bg="#0d1528",height=238,width=115,activebackground="#0d1528").grid(row=11,column=1,rowspan=2,padx=3,pady=2)
-        Pressure = Button(frame, image=self.image_manager.get(self.name,"Pressure"),command=lambda:self.switch_fxn('convertor'),
+        Pressure = Button(frame, image=self.image_manager.get(self.name,"Pressure"),command=lambda:self.switch_fxn('pressure convertor'),
                           bd=0,bg="#0d1528",height=238,width=115,activebackground="#0d1528").grid(row=12,column=0,rowspan=2,padx=2,pady=2)
-        Angle = Button(frame, image=self.image_manager.get(self.name,"Angle"),command=lambda:self.switch_fxn('convertor'),
+        Angle = Button(frame, image=self.image_manager.get(self.name,"Angle"),command=lambda:self.switch_fxn('angle convertor'),
                        bd=0,bg="#0d1528",height=115,width=115,activebackground="#0d1528").grid(row=13,column=1,padx=2,pady=2)
         
         self.canvas.create_window(0, 0, anchor='nw', window=frame)
