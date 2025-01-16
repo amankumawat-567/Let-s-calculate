@@ -73,10 +73,10 @@ class Pannel:
         self.scroll_y.set(0.2,0.3)
 
         self.About = Button(self.frame,image=self.image_manager.get(self.name,"About"),
-                       bd=0,bg="#0d1528",activebackground="#0d1528")
+                       bd=0,bg="#0d1528",activebackground="#0d1528", command=lambda:self.switch_fxn('about'))
 
         self.theme_but = Button(self.frame,image=self.image_manager.get(self.name,"Themes"),
-                           bd=0,bg="#0d1528",activebackground="#0d1528")        
+                           bd=0,bg="#0d1528",activebackground="#0d1528", command=lambda:self.switch_fxn('Theme_window'))        
         
     def show(self):
         parent_height = self.parent.winfo_height()

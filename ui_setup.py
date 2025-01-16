@@ -1,8 +1,23 @@
-from tkinter import Tk, Button
+from typing import Callable
+from tkinter import Tk, Button, Label
 from module import CredentialsThemplate
 from module import ThemeManager, ImageManager, HistoryManager
-from Routers import StandardCalculator, ScientificCalculator, ProgrammingCalculator, Currency_convertor, Unit_convertor, Pannel, Baseframe
+from Routers import StandardCalculator, ScientificCalculator, ProgrammingCalculator, Currency_convertor, Unit_convertor, Pannel, Baseframe, About, ThemeWindow
 from Convertors import UnitConvertor, CurrencyConvertor, CurrencyDataUpdater
+
+def __loading__(function: Callable):
+    def wrapper(frame_work, window: Tk):
+        __loading__ = Label(window,image=frame_work.Iamge_manager.get("Basic comp","Base")
+                            )
+        __loading__.place(height=550,width=340,bordermode="outside")
+        def end():
+            __loading__.place_forget()
+            frame_work.Active_frame.show()
+            frame_work.slider.place(width=40,height=40)
+        window.after(1000,end)
+        function(frame_work, window)
+    return wrapper
+    
 
 class FrameWork:
     def __init__(self):
@@ -44,19 +59,31 @@ class FrameWork:
         self.__open_pannel()
         window.maxsize(self.Active_frame.width,self.Active_frame.height)
         window.minsize(self.Active_frame.width,self.Active_frame.height)
+        
+    def change_theme(self, theme: str, window: Tk):
+        self.Theme_manager.change_theme(theme)
+        self.Iamge_manager.refresh(theme)
+        self.ACTIVE_THEME = self.Theme_manager.get_theme()
+        self._ui_setup(window)
                
     def __open_pannel(self):
         if self.pannel_active:
             self.pannel.hide()
+            if self.Active_frame.name == 'About':
+                self.slider.config(image=self.Iamge_manager.get("About","slider"))
+            elif self.Active_frame.name == 'Theme':
+                self.slider.config(image=self.Iamge_manager.get("Theme","Back_but_image"))
+            else:
+                self.slider.config(image=self.Iamge_manager.get("Basic comp","Slider_image"))
             self.pannel_active = False
         else:
             self.pannel.show()
+            self.slider.config(image=self.Iamge_manager.get("PannelButton","slider_close"))
             self.pannel_active = True
     
     def __get_slider(self,window):
         self.slider = Button(window ,image = self.Iamge_manager.get("Basic comp","Slider_image"),
                              bd=0,command=self.__open_pannel,activebackground=self.ACTIVE_THEME['HeadButtonActiveBg'])
-        self.slider.place(width=40,height=40)
         
     def __get_frames(self,window):
         self.standard_calculator = StandardCalculator(parent=window, theme=self.ACTIVE_THEME,
@@ -77,12 +104,16 @@ class FrameWork:
         self.convertor = Unit_convertor( parent=window, theme=self.ACTIVE_THEME,
                                     image_manager=self.Iamge_manager, Convertor_function=self.unit_convertor)
         
+        self.about = About(parent=window,theme=self.ACTIVE_THEME,image_manager=self.Iamge_manager)
+        
+        self.Theme_window = ThemeWindow(parent=window,theme=self.Theme_manager,image_manager=self.Iamge_manager,
+                                    available_themes=self.Theme_manager.available_themes,theme_changer_fxn= lambda theme: self.change_theme(theme,window))
+        
         self.pannel = Pannel(parent=window,theme=self.ACTIVE_THEME,image_manager=self.Iamge_manager
                              , switch_fxn = lambda Next_frame: self.switch_frame(window,Next_frame))
-        
-    def ui_setup(self,window: Tk):
+     
+    @__loading__
+    def _ui_setup(self,window: Tk):
         self.__get_frames(window=window)
         self.__get_slider(window=window)
-
         self.Active_frame = self.standard_calculator
-        self.Active_frame.show()

@@ -32,7 +32,8 @@
         "Themes": "resources/PannelButton/Themes.png",
         "Time": "resources/PannelButton/Time.png",
         "Volume": "resources/PannelButton/Volume.png",
-        "Weight and Mass": "resources/PannelButton/Weight and Mass.png"
+        "Weight and Mass": "resources/PannelButton/Weight and Mass.png",
+        "slider_close": "resources/PannelButton/slider_close.png"
     },
     "Theme":{
         "Loading": "resources/loading/Theme.png",

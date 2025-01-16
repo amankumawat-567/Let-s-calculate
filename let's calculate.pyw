@@ -9,7 +9,7 @@ def main():
     
     Calculator.load_data()
     Calculator.load_icon(Window)
-    Calculator.ui_setup(Window)
+    Calculator._ui_setup(Window)
     
     Window.mainloop()
 

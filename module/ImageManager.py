@@ -32,7 +32,7 @@ class ImageManager:
             for folder in Folders[:5]:
                 collection = {}
                 for image,path in self.IMAGE_FILE_PATHS[folder].items():
-                    collection[image] = PhotoImage(name=image, file=path)
+                    collection[image] = PhotoImage(file=path)
                 self.Image_galary[folder] = collection               
         
             theme_icons = []
